@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06101a"/>
+      <stop offset="100%" style="stop-color:#030810"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0047AB" stroke-width="0.3" opacity="0.15"/>
+  </pattern>
+  <rect width="800" height="450" fill="url(#grid)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="700" cy="80" r="130" fill="#0047AB" opacity="0.06"/>
+  <circle cx="80" cy="390" r="110" fill="#0047AB" opacity="0.05"/>
+
+  <!-- API icon - curly braces -->
+  <g transform="translate(55, 30)">
+    <rect width="70" height="70" rx="10" fill="#0047AB" opacity="0.15" stroke="#0047AB" stroke-width="1.5"/>
+    <text x="35" y="48" font-family="'Courier New', monospace" font-size="28" fill="#4d9fff" text-anchor="middle" font-weight="bold">{}</text>
+  </g>
+  <text x="140" y="60" font-family="Arial, sans-serif" font-size="13" fill="#4d9fff" opacity="0.9">REST API Design</text>
+
+  <!-- HTTP Methods grid -->
+  <g transform="translate(55, 120)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="13" fill="#ccc" font-weight="bold">HTTP Methods</text>
+
+    <!-- GET -->
+    <rect x="0" y="14" width="80" height="32" rx="5" fill="#27c93f" opacity="0.2" stroke="#27c93f" stroke-width="1.5"/>
+    <text x="40" y="35" font-family="'Courier New', monospace" font-size="14" fill="#27c93f" text-anchor="middle" font-weight="bold">GET</text>
+
+    <!-- POST -->
+    <rect x="90" y="14" width="80" height="32" rx="5" fill="#0047AB" opacity="0.25" stroke="#4d9fff" stroke-width="1.5"/>
+    <text x="130" y="35" font-family="'Courier New', monospace" font-size="14" fill="#4d9fff" text-anchor="middle" font-weight="bold">POST</text>
+
+    <!-- PUT -->
+    <rect x="180" y="14" width="80" height="32" rx="5" fill="#E8A020" opacity="0.2" stroke="#E8A020" stroke-width="1.5"/>
+    <text x="220" y="35" font-family="'Courier New', monospace" font-size="14" fill="#E8A020" text-anchor="middle" font-weight="bold">PUT</text>
+
+    <!-- DELETE -->
+    <rect x="270" y="14" width="90" height="32" rx="5" fill="#D14836" opacity="0.2" stroke="#D14836" stroke-width="1.5"/>
+    <text x="315" y="35" font-family="'Courier New', monospace" font-size="14" fill="#D14836" text-anchor="middle" font-weight="bold">DELETE</text>
+
+    <!-- PATCH -->
+    <rect x="370" y="14" width="85" height="32" rx="5" fill="#9B59B6" opacity="0.2" stroke="#9B59B6" stroke-width="1.5"/>
+    <text x="412" y="35" font-family="'Courier New', monospace" font-size="14" fill="#9B59B6" text-anchor="middle" font-weight="bold">PATCH</text>
+
+    <!-- Descriptions -->
+    <text x="40" y="62" font-family="Arial" font-size="10" fill="#888" text-anchor="middle">Leer</text>
+    <text x="130" y="62" font-family="Arial" font-size="10" fill="#888" text-anchor="middle">Crear</text>
+    <text x="220" y="62" font-family="Arial" font-size="10" fill="#888" text-anchor="middle">Reemplazar</text>
+    <text x="315" y="62" font-family="Arial" font-size="10" fill="#888" text-anchor="middle">Eliminar</text>
+    <text x="412" y="62" font-family="Arial" font-size="10" fill="#888" text-anchor="middle">Modificar</text>
+  </g>
+
+  <!-- Status codes -->
+  <g transform="translate(55, 240)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="13" fill="#ccc" font-weight="bold">HTTP Status Codes</text>
+
+    <rect x="0" y="12" width="60" height="26" rx="4" fill="#27c93f" opacity="0.2" stroke="#27c93f" stroke-width="1"/>
+    <text x="30" y="29" font-family="'Courier New', monospace" font-size="12" fill="#27c93f" text-anchor="middle" font-weight="bold">200</text>
+    <text x="68" y="29" font-family="Arial" font-size="11" fill="#888">OK</text>
+
+    <rect x="130" y="12" width="60" height="26" rx="4" fill="#27c93f" opacity="0.2" stroke="#27c93f" stroke-width="1"/>
+    <text x="160" y="29" font-family="'Courier New', monospace" font-size="12" fill="#27c93f" text-anchor="middle" font-weight="bold">201</text>
+    <text x="198" y="29" font-family="Arial" font-size="11" fill="#888">Created</text>
+
+    <rect x="270" y="12" width="60" height="26" rx="4" fill="#E8A020" opacity="0.2" stroke="#E8A020" stroke-width="1"/>
+    <text x="300" y="29" font-family="'Courier New', monospace" font-size="12" fill="#E8A020" text-anchor="middle" font-weight="bold">400</text>
+    <text x="338" y="29" font-family="Arial" font-size="11" fill="#888">Bad Request</text>
+
+    <rect x="0" y="48" width="60" height="26" rx="4" fill="#D14836" opacity="0.2" stroke="#D14836" stroke-width="1"/>
+    <text x="30" y="65" font-family="'Courier New', monospace" font-size="12" fill="#D14836" text-anchor="middle" font-weight="bold">401</text>
+    <text x="68" y="65" font-family="Arial" font-size="11" fill="#888">Unauthorized</text>
+
+    <rect x="130" y="48" width="60" height="26" rx="4" fill="#D14836" opacity="0.2" stroke="#D14836" stroke-width="1"/>
+    <text x="160" y="65" font-family="'Courier New', monospace" font-size="12" fill="#D14836" text-anchor="middle" font-weight="bold">404</text>
+    <text x="198" y="65" font-family="Arial" font-size="11" fill="#888">Not Found</text>
+
+    <rect x="270" y="48" width="60" height="26" rx="4" fill="#D14836" opacity="0.2" stroke="#D14836" stroke-width="1"/>
+    <text x="300" y="65" font-family="'Courier New', monospace" font-size="12" fill="#D14836" text-anchor="middle" font-weight="bold">500</text>
+    <text x="338" y="65" font-family="Arial" font-size="11" fill="#888">Server Error</text>
+  </g>
+
+  <!-- REST endpoint example right side -->
+  <g transform="translate(490, 100)">
+    <rect x="0" y="0" width="280" height="240" rx="10" fill="#060f1a" stroke="#0047AB" stroke-width="1" opacity="0.9"/>
+    <!-- Window dots -->
+    <circle cx="18" cy="16" r="5" fill="#ff5f56"/>
+    <circle cx="36" cy="16" r="5" fill="#ffbd2e"/>
+    <circle cx="54" cy="16" r="5" fill="#27c93f"/>
+    <line x1="0" y1="30" x2="280" y2="30" stroke="#0047AB" stroke-width="0.5" opacity="0.4"/>
+    <text x="140" y="20" font-family="'Courier New', monospace" font-size="10" fill="#4d9fff" text-anchor="middle">api-endpoints.http</text>
+
+    <text x="14" y="52" font-family="'Courier New', monospace" font-size="11" fill="#27c93f">GET</text>
+    <text x="50" y="52" font-family="'Courier New', monospace" font-size="11" fill="#4d9fff">/api/v1/users</text>
+
+    <text x="14" y="76" font-family="'Courier New', monospace" font-size="11" fill="#4d9fff">POST</text>
+    <text x="55" y="76" font-family="'Courier New', monospace" font-size="11" fill="#4d9fff">/api/v1/users</text>
+
+    <text x="14" y="100" font-family="'Courier New', monospace" font-size="11" fill="#E8A020">PUT</text>
+    <text x="50" y="100" font-family="'Courier New', monospace" font-size="11" fill="#4d9fff">/api/v1/users/{id}</text>
+
+    <text x="14" y="124" font-family="'Courier New', monospace" font-size="11" fill="#D14836">DELETE</text>
+    <text x="64" y="124" font-family="'Courier New', monospace" font-size="11" fill="#4d9fff">/api/v1/users/{id}</text>
+
+    <line x1="14" y1="136" x2="266" y2="136" stroke="#0047AB" stroke-width="0.5" opacity="0.5"/>
+
+    <text x="14" y="156" font-family="'Courier New', monospace" font-size="10" fill="#555">// Response JSON</text>
+    <text x="14" y="174" font-family="'Courier New', monospace" font-size="10" fill="#ccc">{"id": 1,</text>
+    <text x="14" y="190" font-family="'Courier New', monospace" font-size="10" fill="#ccc"> "name": "Admin",</text>
+    <text x="14" y="206" font-family="'Courier New', monospace" font-size="10" fill="#ccc"> "status": 200}</text>
+    <text x="14" y="230" font-family="'Courier New', monospace" font-size="10" fill="#4d9fff">← 200 OK  42ms</text>
+  </g>
+
+  <!-- Title bar -->
+  <rect x="0" y="370" width="800" height="80" fill="#03080f" opacity="0.9"/>
+  <text x="60" y="405" font-family="Arial, sans-serif" font-size="21" fill="white" font-weight="bold">Diseño de APIs REST: Principios y Convenciones</text>
+  <text x="60" y="430" font-family="Arial, sans-serif" font-size="14" fill="#4d9fff" opacity="0.85">Mejores Prácticas · Kodevia Blog</text>
+
+  <!-- Tags -->
+  <rect x="620" y="385" width="90" height="24" rx="12" fill="#0047AB" opacity="0.2" stroke="#4d9fff" stroke-width="1"/>
+  <text x="665" y="401" font-family="Arial, sans-serif" font-size="11" fill="#4d9fff" text-anchor="middle">API Design</text>
+  <rect x="620" y="414" width="90" height="24" rx="12" fill="#0047AB" opacity="0.2" stroke="#4d9fff" stroke-width="1"/>
+  <text x="665" y="430" font-family="Arial, sans-serif" font-size="11" fill="#4d9fff" text-anchor="middle">Standards</text>
+</svg>

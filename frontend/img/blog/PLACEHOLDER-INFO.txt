@@ -1,0 +1,50 @@
+# Blog Thumbnails - Placeholders Necesarios
+
+Por favor, reemplaza estos placeholders con imágenes reales (formato WebP, 800x450px).
+
+Imágenes necesarias:
+
+1. spring-boot-thumb.webp (800x450px)
+   - Tema: Spring Boot, Arquitectura de capas
+   - Colores sugeridos: Verde Spring (#6DB33F), azul corporativo
+   - Elementos: Logo Spring Boot, diagrama de capas, código
+
+2. jpa-hibernate-thumb.webp (800x450px)
+   - Tema: JPA/Hibernate, Performance, Optimización
+   - Colores sugeridos: Marrón Hibernate, naranja Java
+   - Elementos: Logo Hibernate, gráficos de performance, queries SQL
+
+3. jwt-security-thumb.webp (800x450px)
+   - Tema: JWT, Seguridad, Autenticación
+   - Colores sugeridos: Rojo/naranja (seguridad), azul
+   - Elementos: Candado, token JWT visualizado, shield icon
+
+4. rest-api-thumb.webp (800x450px)
+   - Tema: REST APIs, Diseño de APIs, Best Practices
+   - Colores sugeridos: Azul HTTP, verde
+   - Elementos: HTTP methods (GET, POST, PUT, DELETE), JSON, endpoints
+
+5. testing-thumb.webp (800x450px)
+   - Tema: Testing, JUnit, Mockito, Quality Assurance
+   - Colores sugeridos: Verde (tests passing), azul
+   - Elementos: Check marks, gráficos de cobertura, código de tests
+
+## Herramientas Recomendadas para Crear Imágenes:
+
+- Canva (plantillas prediseñadas)
+- Figma (diseño personalizado)
+- Adobe Express
+- Unsplash + edición con texto overlay
+
+## Especificaciones Técnicas:
+
+- Formato: WebP (mejor compresión)
+- Dimensiones: 800x450px (ratio 16:9)
+- Peso máximo: 100KB por imagen
+- Optimización: usa https://squoosh.app para comprimir
+
+## Alternativa Temporal:
+
+Hasta tener las imágenes reales, puedes usar placeholders de servicios como:
+- https://via.placeholder.com/800x450/0047AB/FFFFFF?text=Spring+Boot
+- https://placehold.co/800x450/0047AB/FFFFFF/webp?text=Spring+Boot

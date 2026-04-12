@@ -1,0 +1,37 @@
+# Deploy automático a VPS Hostinger
+#
+# Disparado en cada push a main.
+# Hace SSH al VPS y ejecuta git pull — no hay build step (sitio estático).
+#
+# Secrets requeridos en GitHub → Settings → Secrets and variables → Actions:
+#   VPS_HOST     → IP pública del VPS (ej: 185.xxx.xxx.xxx)
+#   VPS_USER     → usuario SSH del VPS (ej: root)
+#   VPS_SSH_KEY  → clave privada SSH (contenido completo del archivo .pem o id_rsa)
+#   VPS_PATH     → ruta absoluta del repo en el VPS (ej: /var/www/kodevia-portfolio)
+
+name: Deploy to VPS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: SSH deploy → VPS Hostinger
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          script: |
+            cd ${{ secrets.VPS_PATH }}
+            git pull origin main
+            echo "✅ Deploy completado: $(date)"

@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat:*)",
+      "Bash(tree:*)",
+      "Bash(start frontend/index.html)",
+      "Bash(powershell -Command:*)",
+      "Bash(start index.html)",
+      "Bash(start gracias.html)",
+      "Bash(AVANCE-FRONTEND.md)",
+      "mcp__plugin_engram_engram__mem_context",
+      "mcp__plugin_engram_engram__mem_save",
+      "Bash(magick --version)",
+      "Bash(convert --version)",
+      "Bash(mkdir -p img/originals/hero img/originals/stack)",
+      "Bash(cp img/hero/hero1.webp img/originals/hero/)",
+      "Bash(cp img/hero/hero2.webp img/originals/hero/)",
+      "Bash(cp img/hero/hero3.webp img/originals/hero/)",
+      "Bash(cp img/stack/backend-core.webp img/originals/stack/)",
+      "Bash(magick img/hero/hero1.webp -quality 75 -resize \"1920x1080>\" img/hero/hero1.webp)",
+      "Bash(magick img/hero/hero2.webp -quality 75 -resize \"1920x1080>\" img/hero/hero2.webp)",
+      "Bash(magick img/hero/hero3.webp -quality 75 -resize \"1920x1080>\" img/hero/hero3.webp)",
+      "Bash(magick img/stack/backend-core.webp -quality 80 -resize \"800x600>\" img/stack/backend-core.webp)",
+      "Bash(magick img/stack/frontend-core.webp -quality 80 -resize \"800x600>\" img/stack/frontend-core.webp)",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "Bash(python -m http.server 8080)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080)",
+      "Bash(where.exe python:*)",
+      "Bash(where.exe python3:*)",
+      "Read(//c/Users/guido/AppData/Local/Programs/Python//**)",
+      "Bash(ls \"/c/Python\"*)",
+      "Bash(magick identify:*)",
+      "Bash(magick -size 1200x630 xc:#0047AB \"D:\\\\Programacion\\\\5-Proyectos\\\\Proyecto_Kodevia\\\\kodevia-portfolio\\\\frontend\\\\img\\\\logo-kodevia-full.webp\" -resize 400x400 -gravity center -composite \"D:\\\\Programacion\\\\5-Proyectos\\\\Proyecto_Kodevia\\\\kodevia-portfolio\\\\frontend\\\\img\\\\og-image.webp\")",
+      "Bash(magick \"D:\\\\Programacion\\\\5-Proyectos\\\\Proyecto_Kodevia\\\\kodevia-portfolio\\\\frontend\\\\img\\\\logo-kodevia-full.webp\" -resize 180x180 \"D:\\\\Programacion\\\\5-Proyectos\\\\Proyecto_Kodevia\\\\kodevia-portfolio\\\\frontend\\\\img\\\\apple-touch-icon.webp\")",
+      "mcp__plugin_chrome-devtools-mcp_chrome-devtools__list_pages",
+      "Bash(xxd)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

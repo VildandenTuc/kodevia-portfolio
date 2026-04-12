@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Mensaje Enviado! - Kodevia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-kodevia-principal: #0047AB;
+            --color-kodevia-texto-oscuro: #36454F;
+            --color-kodevia-fondo-claro: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, var(--color-kodevia-principal) 0%, #003a8c 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            animation: slideUp 0.6s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo-container {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeInDown 0.6s ease;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            width: 180px;
+            height: auto;
+            max-width: 100%;
+        }
+
+        .checkmark {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #4CAF50;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            animation: scaleIn 0.5s ease 0.3s both;
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .checkmark svg {
+            width: 50px;
+            height: 50px;
+            stroke: white;
+            stroke-width: 3;
+            fill: none;
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+            animation: drawCheck 0.8s ease 0.6s forwards;
+        }
+
+        @keyframes drawCheck {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        h1 {
+            color: var(--color-kodevia-texto-oscuro);
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            color: var(--color-kodevia-principal);
+            font-weight: 600;
+        }
+
+        .info-box {
+            background: #f8f9fa;
+            border-left: 4px solid var(--color-kodevia-principal);
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .info-box h3 {
+            color: var(--color-kodevia-principal);
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .info-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-box li {
+            padding: 8px 0;
+            color: var(--color-kodevia-texto-oscuro);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-box li::before {
+            content: "✓";
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .btn-volver {
+            display: inline-block;
+            background: var(--color-kodevia-principal);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 71, 171, 0.3);
+        }
+
+        .btn-volver:hover {
+            background: #003a8c;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 71, 171, 0.4);
+        }
+
+        .countdown {
+            font-size: 0.9rem;
+            color: #999;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 25px;
+            }
+
+            .logo {
+                width: 140px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo de Kodevia -->
+        <div class="logo-container">
+            <img src="img/logo-kodevia.webp" alt="Kodevia Logo" class="logo">
+        </div>
+
+        <div class="checkmark">
+            <svg viewBox="0 0 52 52">
+                <path d="M14 27l9 9L38 17"/>
+            </svg>
+        </div>
+
+        <h1>¡Mensaje Enviado!</h1>
+
+        <p>
+            Gracias por contactar a <span class="highlight">Kodevia</span>.
+        </p>
+
+        <p>
+            Tu consulta ha sido recibida exitosamente y está en camino a
+            <strong>infokodevia@gmail.com</strong>.
+        </p>
+
+        <div class="info-box">
+            <h3>¿Qué sigue ahora?</h3>
+            <ul>
+                <li>Revisaré tu mensaje en las próximas 24 horas</li>
+                <li>Te responderé con una evaluación inicial de tu proyecto</li>
+                <li>Si es viable, coordinaremos una consulta gratuita de 30 minutos</li>
+            </ul>
+        </div>
+
+        <p style="margin-top: 30px;">
+            <strong>Mientras tanto:</strong> Podés explorar más sobre mis proyectos
+            y capacidades en el portfolio.
+        </p>
+
+        <a href="index.html" class="btn-volver">Volver al Portfolio</a>
+
+        <p class="countdown" id="countdown">
+            Serás redirigido automáticamente en <strong>10</strong> segundos...
+        </p>
+    </div>
+
+    <script>
+        // Countdown y redirección automática
+        let segundos = 10;
+        const countdownElement = document.getElementById('countdown');
+
+        const interval = setInterval(() => {
+            segundos--;
+            if (segundos <= 0) {
+                clearInterval(interval);
+                window.location.href = 'index.html';
+            } else {
+                countdownElement.innerHTML = `Serás redirigido automáticamente en <strong>${segundos}</strong> segundo${segundos !== 1 ? 's' : ''}...`;
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

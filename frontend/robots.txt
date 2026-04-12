@@ -1,0 +1,49 @@
+# robots.txt para Kodevia Portfolio
+# Configuración optimizada para SEO
+
+# Permitir acceso a todos los bots de búsqueda
+User-agent: *
+Allow: /
+
+# Googlebot específico (motor de búsqueda principal)
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Googlebot para imágenes
+User-agent: Googlebot-Image
+Allow: /
+
+# Bingbot (motor de búsqueda Microsoft)
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+# Bloquear acceso a archivos de configuración y privados
+Disallow: /*.json$
+Disallow: /*.md$
+Disallow: /CLAUDE.md
+Disallow: /PLAN-FRONTEND.md
+Disallow: /AVANCE-FRONTEND.md
+
+# Bloquear directorios de desarrollo (si existen)
+Disallow: /node_modules/
+Disallow: /temp/
+Disallow: /.git/
+Disallow: /.vscode/
+
+# Permitir explícitamente recursos importantes
+Allow: /img/
+Allow: /styles.css
+Allow: /app.js
+Allow: /*.webp$
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.svg$
+
+# Ubicación del sitemap
+Sitemap: https://kodevia.com/sitemap.xml
+
+# Información adicional
+# Host: https://kodevia.com
+# Contact: infokodevia@gmail.com

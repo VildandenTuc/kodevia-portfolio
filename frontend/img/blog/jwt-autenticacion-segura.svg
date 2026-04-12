@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0808"/>
+      <stop offset="100%" style="stop-color:#0d0505"/>
+    </linearGradient>
+    <linearGradient id="tokenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D14836"/>
+      <stop offset="33%" style="stop-color:#D14836"/>
+      <stop offset="33%" style="stop-color:#e8734a"/>
+      <stop offset="66%" style="stop-color:#e8734a"/>
+      <stop offset="66%" style="stop-color:#E8A020"/>
+      <stop offset="100%" style="stop-color:#E8A020"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#D14836" stroke-width="0.3" opacity="0.1"/>
+  </pattern>
+  <rect width="800" height="450" fill="url(#grid)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="700" cy="100" r="140" fill="#D14836" opacity="0.05"/>
+  <circle cx="80" cy="380" r="100" fill="#D14836" opacity="0.04"/>
+
+  <!-- Shield icon (security) -->
+  <g transform="translate(55, 30)" filter="url(#glow)">
+    <path d="M 35 5 L 65 15 L 65 40 Q 65 65 35 75 Q 5 65 5 40 L 5 15 Z" fill="#D14836" opacity="0.2" stroke="#D14836" stroke-width="2"/>
+    <path d="M 35 20 L 50 26 L 50 42 Q 50 56 35 62 Q 20 56 20 42 L 20 26 Z" fill="#D14836" opacity="0.5"/>
+    <!-- Lock icon inside shield -->
+    <rect x="27" y="37" width="16" height="12" rx="2" fill="white" opacity="0.9"/>
+    <path d="M 30 37 L 30 32 Q 30 26 35 26 Q 40 26 40 32 L 40 37" fill="none" stroke="white" stroke-width="2.5" opacity="0.9"/>
+    <circle cx="35" cy="43" r="2" fill="#D14836"/>
+  </g>
+  <text x="130" y="65" font-family="Arial, sans-serif" font-size="13" fill="#D14836" opacity="0.9">JWT Security</text>
+
+  <!-- JWT Token structure -->
+  <g transform="translate(55, 120)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="13" fill="#ccc" font-weight="bold">Estructura del Token JWT</text>
+
+    <!-- Token visual bar -->
+    <rect x="0" y="12" width="680" height="36" rx="6" fill="url(#tokenGrad)" opacity="0.85"/>
+
+    <!-- Header part -->
+    <text x="70" y="35" font-family="'Courier New', monospace" font-size="11" fill="white" text-anchor="middle">eyJhbGciOiJIUzI1NiJ9</text>
+    <!-- Payload part -->
+    <text x="310" y="35" font-family="'Courier New', monospace" font-size="11" fill="white" text-anchor="middle">eyJzdWIiOiJ1c2VyMSJ9</text>
+    <!-- Signature part -->
+    <text x="560" y="35" font-family="'Courier New', monospace" font-size="11" fill="white" text-anchor="middle">SflKxwRJSMeKKF2QT4fw</text>
+
+    <!-- Dividers -->
+    <text x="226" y="35" font-family="monospace" font-size="18" fill="white" font-weight="bold" text-anchor="middle">.</text>
+    <text x="453" y="35" font-family="monospace" font-size="18" fill="white" font-weight="bold" text-anchor="middle">.</text>
+
+    <!-- Labels below -->
+    <text x="70" y="64" font-family="Arial, sans-serif" font-size="11" fill="#D14836" text-anchor="middle" font-weight="bold">Header</text>
+    <text x="310" y="64" font-family="Arial, sans-serif" font-size="11" fill="#e8734a" text-anchor="middle" font-weight="bold">Payload</text>
+    <text x="560" y="64" font-family="Arial, sans-serif" font-size="11" fill="#E8A020" text-anchor="middle" font-weight="bold">Signature</text>
+
+    <text x="70" y="80" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">alg, typ</text>
+    <text x="310" y="80" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">sub, iat, exp, roles</text>
+    <text x="560" y="80" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle">HMACSHA256(base64)</text>
+  </g>
+
+  <!-- Flow diagram -->
+  <g transform="translate(55, 240)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="13" fill="#ccc" font-weight="bold">Flujo de Autenticación</text>
+
+    <!-- Client -->
+    <rect x="0" y="15" width="90" height="40" rx="6" fill="#1a0808" stroke="#D14836" stroke-width="1.5"/>
+    <text x="45" y="30" font-family="Arial" font-size="10" fill="#ccc" text-anchor="middle">Cliente</text>
+    <text x="45" y="46" font-family="Arial" font-size="9" fill="#888" text-anchor="middle">/login POST</text>
+
+    <!-- Arrow 1 -->
+    <line x1="90" y1="35" x2="155" y2="35" stroke="#D14836" stroke-width="1.5" stroke-dasharray="5,3"/>
+    <polygon points="155,35 147,30 147,40" fill="#D14836"/>
+    <text x="122" y="28" font-family="Arial" font-size="9" fill="#888" text-anchor="middle">credentials</text>
+
+    <!-- Server -->
+    <rect x="155" y="15" width="100" height="40" rx="6" fill="#1a0808" stroke="#D14836" stroke-width="1.5"/>
+    <text x="205" y="30" font-family="Arial" font-size="10" fill="#ccc" text-anchor="middle">Spring Boot</text>
+    <text x="205" y="46" font-family="Arial" font-size="9" fill="#888" text-anchor="middle">JwtService</text>
+
+    <!-- Arrow 2 -->
+    <line x1="255" y1="35" x2="320" y2="35" stroke="#E8A020" stroke-width="1.5" stroke-dasharray="5,3"/>
+    <polygon points="320,35 312,30 312,40" fill="#E8A020"/>
+    <text x="287" y="28" font-family="Arial" font-size="9" fill="#888" text-anchor="middle">JWT token</text>
+
+    <!-- Client stores -->
+    <rect x="320" y="15" width="100" height="40" rx="6" fill="#1a0808" stroke="#E8A020" stroke-width="1.5"/>
+    <text x="370" y="30" font-family="Arial" font-size="10" fill="#ccc" text-anchor="middle">Cliente</text>
+    <text x="370" y="46" font-family="Arial" font-size="9" fill="#888" text-anchor="middle">localStorage</text>
+
+    <!-- Arrow 3 -->
+    <line x1="420" y1="35" x2="485" y2="35" stroke="#27c93f" stroke-width="1.5" stroke-dasharray="5,3"/>
+    <polygon points="485,35 477,30 477,40" fill="#27c93f"/>
+    <text x="452" y="28" font-family="Arial" font-size="9" fill="#888" text-anchor="middle">Bearer token</text>
+
+    <!-- Protected API -->
+    <rect x="485" y="15" width="100" height="40" rx="6" fill="#1a0808" stroke="#27c93f" stroke-width="1.5"/>
+    <text x="535" y="30" font-family="Arial" font-size="10" fill="#ccc" text-anchor="middle">API /secure</text>
+    <text x="535" y="46" font-family="Arial" font-size="9" fill="#888" text-anchor="middle">@Secured</text>
+
+    <!-- Lock icon at protected -->
+    <text x="610" y="42" font-family="Arial" font-size="20" fill="#27c93f">🔒</text>
+  </g>
+
+  <!-- Title bar -->
+  <rect x="0" y="370" width="800" height="80" fill="#0d0505" opacity="0.9"/>
+  <text x="60" y="405" font-family="Arial, sans-serif" font-size="21" fill="white" font-weight="bold">JWT en Spring Boot: Implementación Segura</text>
+  <text x="60" y="430" font-family="Arial, sans-serif" font-size="14" fill="#D14836" opacity="0.85">Autenticación y Autorización · Kodevia Blog</text>
+
+  <!-- Tags -->
+  <rect x="625" y="385" width="80" height="24" rx="12" fill="#D14836" opacity="0.15" stroke="#D14836" stroke-width="1"/>
+  <text x="665" y="401" font-family="Arial, sans-serif" font-size="11" fill="#D14836" text-anchor="middle">Security</text>
+  <rect x="625" y="414" width="110" height="24" rx="12" fill="#D14836" opacity="0.15" stroke="#D14836" stroke-width="1"/>
+  <text x="680" y="430" font-family="Arial, sans-serif" font-size="11" fill="#D14836" text-anchor="middle">Authentication</text>
+</svg>

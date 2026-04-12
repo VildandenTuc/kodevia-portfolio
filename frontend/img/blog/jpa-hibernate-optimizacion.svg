@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1008"/>
+      <stop offset="100%" style="stop-color:#0d0a05"/>
+    </linearGradient>
+    <linearGradient id="barGood" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#27c93f"/>
+      <stop offset="100%" style="stop-color:#1a8c2b"/>
+    </linearGradient>
+    <linearGradient id="barBad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D14836"/>
+      <stop offset="100%" style="stop-color:#8c2e22"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#BC8034" stroke-width="0.3" opacity="0.12"/>
+  </pattern>
+  <rect width="800" height="450" fill="url(#grid)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="700" cy="80" r="130" fill="#BC8034" opacity="0.05"/>
+  <circle cx="100" cy="380" r="100" fill="#BC8034" opacity="0.05"/>
+
+  <!-- Hibernate logo (H simplified) -->
+  <g transform="translate(55, 35)">
+    <rect width="70" height="70" rx="12" fill="#BC8034" opacity="0.15" stroke="#BC8034" stroke-width="1.5"/>
+    <text x="35" y="48" font-family="Arial Black, sans-serif" font-size="38" fill="#BC8034" text-anchor="middle" font-weight="900">H</text>
+  </g>
+  <text x="140" y="65" font-family="Arial, sans-serif" font-size="13" fill="#BC8034" opacity="0.9">JPA / Hibernate</text>
+
+  <!-- N+1 Problem visualization -->
+  <g transform="translate(55, 130)">
+    <!-- Label -->
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="13" fill="#D14836" font-weight="bold">Problema N+1</text>
+
+    <!-- Bad queries list -->
+    <rect x="0" y="12" width="230" height="28" rx="4" fill="#D14836" opacity="0.1" stroke="#D14836" stroke-width="1"/>
+    <text x="8" y="30" font-family="'Courier New', monospace" font-size="10" fill="#D14836">SELECT * FROM users</text>
+    <text x="195" y="30" font-family="'Courier New', monospace" font-size="10" fill="#D14836" opacity="0.7">#1</text>
+
+    <rect x="0" y="46" width="230" height="22" rx="4" fill="#D14836" opacity="0.08" stroke="#D14836" stroke-width="0.5"/>
+    <text x="8" y="62" font-family="'Courier New', monospace" font-size="10" fill="#888">SELECT * FROM orders WHERE user_id=1</text>
+    <rect x="0" y="74" width="230" height="22" rx="4" fill="#D14836" opacity="0.08" stroke="#D14836" stroke-width="0.5"/>
+    <text x="8" y="90" font-family="'Courier New', monospace" font-size="10" fill="#888">SELECT * FROM orders WHERE user_id=2</text>
+    <rect x="0" y="102" width="230" height="22" rx="4" fill="#D14836" opacity="0.08" stroke="#D14836" stroke-width="0.5"/>
+    <text x="8" y="118" font-family="'Courier New', monospace" font-size="10" fill="#888">SELECT * FROM orders WHERE user_id=3</text>
+
+    <!-- Dots -->
+    <text x="100" y="140" font-family="Arial" font-size="16" fill="#D14836" text-anchor="middle" opacity="0.7">• • •</text>
+    <text x="100" y="162" font-family="Arial" font-size="11" fill="#D14836" text-anchor="middle">N+1 queries = lento</text>
+  </g>
+
+  <!-- Arrow -->
+  <text x="310" y="235" font-family="Arial" font-size="28" fill="#BC8034" text-anchor="middle">→</text>
+
+  <!-- Fix: JOIN FETCH -->
+  <g transform="translate(340, 130)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="13" fill="#27c93f" font-weight="bold">Solución: JOIN FETCH</text>
+    <rect x="0" y="12" width="230" height="28" rx="4" fill="#27c93f" opacity="0.1" stroke="#27c93f" stroke-width="1"/>
+    <text x="8" y="24" font-family="'Courier New', monospace" font-size="9" fill="#27c93f">SELECT u FROM User u</text>
+    <text x="8" y="36" font-family="'Courier New', monospace" font-size="9" fill="#27c93f">JOIN FETCH u.orders</text>
+    <text x="195" y="36" font-family="'Courier New', monospace" font-size="10" fill="#27c93f" opacity="0.7">#1</text>
+
+    <text x="115" y="75" font-family="Arial" font-size="11" fill="#27c93f" text-anchor="middle">1 query = rápido</text>
+  </g>
+
+  <!-- Performance bars chart -->
+  <g transform="translate(340, 200)">
+    <text x="115" y="0" font-family="Arial, sans-serif" font-size="12" fill="#BC8034" text-anchor="middle" opacity="0.8">Queries por operación</text>
+
+    <!-- Bar chart axes -->
+    <line x1="30" y1="10" x2="30" y2="110" stroke="#555" stroke-width="1"/>
+    <line x1="30" y1="110" x2="240" y2="110" stroke="#555" stroke-width="1"/>
+
+    <!-- Bad bar (N+1) -->
+    <rect x="50" y="30" width="60" height="80" fill="url(#barBad)" opacity="0.85" rx="3"/>
+    <text x="80" y="25" font-family="Arial" font-size="10" fill="#D14836" text-anchor="middle">101 queries</text>
+    <text x="80" y="125" font-family="Arial" font-size="10" fill="#888" text-anchor="middle">N+1</text>
+
+    <!-- Good bar (JOIN) -->
+    <rect x="145" y="98" width="60" height="12" fill="url(#barGood)" opacity="0.85" rx="3"/>
+    <text x="175" y="93" font-family="Arial" font-size="10" fill="#27c93f" text-anchor="middle">1 query</text>
+    <text x="175" y="125" font-family="Arial" font-size="10" fill="#888" text-anchor="middle">JOIN FETCH</text>
+  </g>
+
+  <!-- Title bar -->
+  <rect x="0" y="370" width="800" height="80" fill="#0d0a05" opacity="0.85"/>
+  <text x="60" y="405" font-family="Arial, sans-serif" font-size="21" fill="white" font-weight="bold">JPA y Hibernate: Evitando el Problema N+1</text>
+  <text x="60" y="430" font-family="Arial, sans-serif" font-size="14" fill="#BC8034" opacity="0.85">Optimizaciones Críticas · Kodevia Blog</text>
+
+  <!-- Tags -->
+  <rect x="625" y="385" width="90" height="24" rx="12" fill="#BC8034" opacity="0.15" stroke="#BC8034" stroke-width="1"/>
+  <text x="670" y="401" font-family="Arial, sans-serif" font-size="11" fill="#BC8034" text-anchor="middle">Performance</text>
+  <rect x="625" y="414" width="90" height="24" rx="12" fill="#BC8034" opacity="0.15" stroke="#BC8034" stroke-width="1"/>
+  <text x="670" y="430" font-family="Arial, sans-serif" font-size="11" fill="#BC8034" text-anchor="middle">Database</text>
+</svg>

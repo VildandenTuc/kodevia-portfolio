@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#081a0a"/>
+      <stop offset="100%" style="stop-color:#040d05"/>
+    </linearGradient>
+    <linearGradient id="coverageBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#25A162"/>
+      <stop offset="87%" style="stop-color:#25A162"/>
+      <stop offset="87%" style="stop-color:#333"/>
+      <stop offset="100%" style="stop-color:#333"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#25A162" stroke-width="0.3" opacity="0.12"/>
+  </pattern>
+  <rect width="800" height="450" fill="url(#grid)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="700" cy="90" r="130" fill="#25A162" opacity="0.05"/>
+  <circle cx="80" cy="390" r="110" fill="#25A162" opacity="0.05"/>
+
+  <!-- JUnit 5 logo (check icon) -->
+  <g transform="translate(55, 30)">
+    <rect width="70" height="70" rx="10" fill="#25A162" opacity="0.15" stroke="#25A162" stroke-width="1.5"/>
+    <!-- Checkmark -->
+    <polyline points="16,38 28,52 54,22" stroke="#25A162" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="140" y="57" font-family="Arial, sans-serif" font-size="13" fill="#25A162" opacity="0.9">Testing · JUnit 5 · Mockito</text>
+
+  <!-- Test pyramid -->
+  <g transform="translate(55, 120)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="13" fill="#ccc" font-weight="bold">Pirámide de Testing</text>
+
+    <!-- E2E (top, small) -->
+    <polygon points="115,20 55,80 175,80" fill="#E8A020" opacity="0.2" stroke="#E8A020" stroke-width="1.5"/>
+    <text x="115" y="62" font-family="Arial" font-size="10" fill="#E8A020" text-anchor="middle">E2E Tests</text>
+
+    <!-- Integration (middle) -->
+    <polygon points="115,80 30,160 200,160" fill="#4d9fff" opacity="0.15" stroke="#4d9fff" stroke-width="1.5"/>
+    <text x="115" y="130" font-family="Arial" font-size="11" fill="#4d9fff" text-anchor="middle">Integration Tests</text>
+    <text x="115" y="148" font-family="Arial" font-size="9" fill="#4d9fff" text-anchor="middle" opacity="0.7">@SpringBootTest</text>
+
+    <!-- Unit (base, large) -->
+    <polygon points="115,160 0,260 230,260" fill="#25A162" opacity="0.15" stroke="#25A162" stroke-width="1.5"/>
+    <text x="115" y="218" font-family="Arial" font-size="12" fill="#25A162" text-anchor="middle" font-weight="bold">Unit Tests</text>
+    <text x="115" y="238" font-family="Arial" font-size="10" fill="#25A162" text-anchor="middle" opacity="0.8">@ExtendWith(MockitoExtension)</text>
+
+    <!-- Labels right -->
+    <text x="240" y="60" font-family="Arial" font-size="10" fill="#888">Pocos,</text>
+    <text x="240" y="74" font-family="Arial" font-size="10" fill="#888">lentos</text>
+    <text x="240" y="128" font-family="Arial" font-size="10" fill="#888">Algunos</text>
+    <text x="240" y="224" font-family="Arial" font-size="10" fill="#888">Muchos,</text>
+    <text x="240" y="238" font-family="Arial" font-size="10" fill="#888">rápidos</text>
+  </g>
+
+  <!-- Code snippet right side -->
+  <g transform="translate(430, 100)">
+    <rect x="0" y="0" width="330" height="240" rx="10" fill="#040d05" stroke="#25A162" stroke-width="1" opacity="0.9"/>
+    <!-- Window dots -->
+    <circle cx="20" cy="16" r="5" fill="#ff5f56"/>
+    <circle cx="38" cy="16" r="5" fill="#ffbd2e"/>
+    <circle cx="56" cy="16" r="5" fill="#27c93f"/>
+    <line x1="0" y1="30" x2="330" y2="30" stroke="#25A162" stroke-width="0.5" opacity="0.4"/>
+    <text x="165" y="20" font-family="'Courier New', monospace" font-size="10" fill="#25A162" text-anchor="middle">UserServiceTest.java</text>
+
+    <text x="14" y="52" font-family="'Courier New', monospace" font-size="11" fill="#25A162">@ExtendWith(MockitoExtension)</text>
+    <text x="14" y="70" font-family="'Courier New', monospace" font-size="11" fill="white">class <tspan fill="#66d9e8">UserServiceTest</tspan> {</text>
+    <text x="14" y="90" font-family="'Courier New', monospace" font-size="11" fill="#25A162">  @Mock</text>
+    <text x="14" y="108" font-family="'Courier New', monospace" font-size="11" fill="white">  <tspan fill="#66d9e8">UserRepository</tspan> repo;</text>
+    <text x="14" y="128" font-family="'Courier New', monospace" font-size="11" fill="#25A162">  @InjectMocks</text>
+    <text x="14" y="146" font-family="'Courier New', monospace" font-size="11" fill="white">  <tspan fill="#66d9e8">UserService</tspan> service;</text>
+
+    <text x="14" y="168" font-family="'Courier New', monospace" font-size="11" fill="#25A162">  @Test</text>
+    <text x="14" y="186" font-family="'Courier New', monospace" font-size="11" fill="white">  void <tspan fill="#ffcc00">shouldFindById</tspan>() {</text>
+    <text x="14" y="204" font-family="'Courier New', monospace" font-size="11" fill="#888">    when(repo.findById(1L))</text>
+    <text x="14" y="220" font-family="'Courier New', monospace" font-size="11" fill="#888">      .thenReturn(user);</text>
+    <text x="14" y="238" font-family="'Courier New', monospace" font-size="11" fill="#4d9fff">    assertThat(result).isNotNull();</text>
+  </g>
+
+  <!-- Coverage bar -->
+  <g transform="translate(430, 360)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="12" fill="#ccc">Cobertura de tests</text>
+    <rect x="0" y="8" width="330" height="14" rx="7" fill="#333"/>
+    <rect x="0" y="8" width="287" height="14" rx="7" fill="#25A162" opacity="0.85"/>
+    <text x="287" y="20" font-family="Arial" font-size="11" fill="#25A162" text-anchor="end">87%</text>
+    <text x="330" y="20" font-family="Arial" font-size="11" fill="#555" text-anchor="end">100%</text>
+
+    <!-- Test results -->
+    <text x="0" y="46" font-family="'Courier New', monospace" font-size="11" fill="#25A162">✓ 42 tests passed</text>
+    <text x="180" y="46" font-family="'Courier New', monospace" font-size="11" fill="#D14836">✗ 0 failed</text>
+  </g>
+
+  <!-- Title bar -->
+  <rect x="0" y="370" width="800" height="80" fill="#040d05" opacity="0.9"/>
+  <text x="60" y="405" font-family="Arial, sans-serif" font-size="20" fill="white" font-weight="bold">Testing en Spring Boot: JUnit 5, Mockito e Integración</text>
+  <text x="60" y="430" font-family="Arial, sans-serif" font-size="14" fill="#25A162" opacity="0.85">Quality Assurance · Kodevia Blog</text>
+
+  <!-- Tags -->
+  <rect x="625" y="385" width="90" height="24" rx="12" fill="#25A162" opacity="0.15" stroke="#25A162" stroke-width="1"/>
+  <text x="670" y="401" font-family="Arial, sans-serif" font-size="11" fill="#25A162" text-anchor="middle">Testing</text>
+  <rect x="625" y="414" width="90" height="24" rx="12" fill="#25A162" opacity="0.15" stroke="#25A162" stroke-width="1"/>
+  <text x="670" y="430" font-family="Arial, sans-serif" font-size="11" fill="#25A162" text-anchor="middle">Quality</text>
+</svg>

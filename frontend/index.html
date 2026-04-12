@@ -1,0 +1,2712 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- SEO Meta Tags -->
+    <title>
+      Kodevia | Ingeniería de Software con Precisión - Desarrollo Java/Spring
+      Boot
+    </title>
+    <meta
+      name="description"
+      content="Desarrollo de software empresarial con Java/Spring Boot. Sistemas de facturación, inventarios y gestión automática. Ahorra 20+ horas semanales. Tucumán, Argentina."
+    />
+    <meta
+      name="keywords"
+      content="desarrollo software, Java, Spring Boot, APIs REST, sistemas empresariales, facturación automática, inventarios, JPA, Hibernate, JWT, desarrollo backend, Tucumán, Argentina, automatización procesos, software a medida"
+    />
+    <meta name="author" content="Kodevia - Ingeniería de Software" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="language" content="Spanish" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="rating" content="general" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kodevia.com/" />
+    <meta
+      property="og:title"
+      content="Kodevia | Ingeniería de Software con Precisión - Desarrollo Java/Spring Boot"
+    />
+    <meta
+      property="og:description"
+      content="Transformo procesos manuales en sistemas automáticos. Desarrollo con Java/Spring Boot - código limpio, documentado y sin dependencia."
+    />
+    <meta property="og:image" content="https://kodevia.com/img/og-image.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="es_AR" />
+    <meta property="og:site_name" content="Kodevia" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://kodevia.com/" />
+    <meta
+      name="twitter:title"
+      content="Kodevia | Ingeniería de Software con Precisión"
+    />
+    <meta
+      name="twitter:description"
+      content="Transformo procesos manuales en sistemas automáticos. Desarrollo con Java/Spring Boot para pequeñas empresas."
+    />
+    <meta
+      name="twitter:image"
+      content="https://kodevia.com/img/og-image.webp"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://kodevia.com/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="img/logo-kodevia.webp" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://kodevia.com/#organization",
+            "name": "Kodevia",
+            "url": "https://kodevia.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://kodevia.com/img/logo-kodevia.webp",
+              "width": 120,
+              "height": 40
+            },
+            "description": "Ingeniería de software con precisión. Desarrollo de sistemas empresariales con Java/Spring Boot.",
+            "email": "infokodevia@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "San Miguel de Tucumán",
+              "addressRegion": "Tucumán",
+              "addressCountry": "AR"
+            },
+            "sameAs": ["https://github.com/kodevia"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://kodevia.com/#website",
+            "url": "https://kodevia.com",
+            "name": "Kodevia - Ingeniería de Software",
+            "description": "Desarrollo de software empresarial con Java/Spring Boot",
+            "publisher": {
+              "@id": "https://kodevia.com/#organization"
+            },
+            "inLanguage": "es-AR"
+          },
+          {
+            "@type": "ProfessionalService",
+            "@id": "https://kodevia.com/#service",
+            "name": "Kodevia - Desarrollo de Software",
+            "image": "https://kodevia.com/img/logo-kodevia.webp",
+            "telephone": "",
+            "email": "infokodevia@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "San Miguel de Tucumán",
+              "addressRegion": "Tucumán",
+              "addressCountry": "AR"
+            },
+            "priceRange": "$$",
+            "areaServed": {
+              "@type": "Country",
+              "name": "Argentina"
+            },
+            "serviceType": [
+              "Software Development",
+              "Backend Development",
+              "API Development",
+              "Enterprise Software"
+            ],
+            "url": "https://kodevia.com"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://kodevia.com/#webpage",
+            "url": "https://kodevia.com",
+            "name": "Kodevia | Ingeniería de Software con Precisión",
+            "isPartOf": {
+              "@id": "https://kodevia.com/#website"
+            },
+            "about": {
+              "@id": "https://kodevia.com/#organization"
+            },
+            "description": "Transformo procesos manuales en sistemas automáticos. Desarrollo con Java/Spring Boot - código limpio, documentado y sin dependencia.",
+            "inLanguage": "es-AR"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://kodevia.com/#person",
+            "name": "Kodevia Developer",
+            "jobTitle": "Software Engineer",
+            "worksFor": {
+              "@id": "https://kodevia.com/#organization"
+            },
+            "email": "infokodevia@gmail.com",
+            "knowsAbout": [
+              "Java",
+              "Spring Boot",
+              "REST APIs",
+              "JPA",
+              "Hibernate",
+              "JWT",
+              "MySQL",
+              "Software Architecture"
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "San Miguel de Tucumán",
+              "addressRegion": "Tucumán",
+              "addressCountry": "AR"
+            }
+          },
+          {
+            "@type": "CreativeWork",
+            "@id": "https://kodevia.com/#proyecto-biblioteca",
+            "name": "Sistema de Gestión de Biblioteca Escolar",
+            "description": "Sistema Web/Standalone completo para gestión de biblioteca con Java/Spring Boot y React",
+            "author": {
+              "@id": "https://kodevia.com/#person"
+            },
+            "keywords": "Java, Spring Boot, React, MySQL, Sistema de Biblioteca",
+            "programmingLanguage": ["Java", "JavaScript"],
+            "runtimePlatform": "Spring Boot",
+            "applicationCategory": "BusinessApplication"
+          },
+          {
+            "@type": "CreativeWork",
+            "@id": "https://kodevia.com/#proyecto-instituto",
+            "name": "Sitio Web Institucional - Instituto Privado Tucumán",
+            "description": "Portal moderno y responsive para proyección comunitaria con HTML5, CSS3 y JavaScript",
+            "author": {
+              "@id": "https://kodevia.com/#person"
+            },
+            "keywords": "HTML, CSS, JavaScript, Responsive, SEO",
+            "programmingLanguage": ["HTML", "CSS", "JavaScript"],
+            "applicationCategory": "WebApplication"
+          },
+          {
+            "@type": "CreativeWork",
+            "@id": "https://kodevia.com/#proyecto-apis",
+            "name": "Portfolio de APIs REST con Spring Boot",
+            "description": "Múltiples APIs REST siguiendo mejores prácticas con JWT, Swagger y testing completo",
+            "author": {
+              "@id": "https://kodevia.com/#person"
+            },
+            "keywords": "Java, Spring Boot, REST API, JWT, Swagger, JPA",
+            "programmingLanguage": ["Java"],
+            "runtimePlatform": "Spring Boot",
+            "applicationCategory": "SoftwareApplication"
+          },
+          {
+            "@type": "Blog",
+            "@id": "https://kodevia.com/#blog",
+            "name": "Blog Técnico Kodevia",
+            "description": "Artículos sobre desarrollo backend, Spring Boot, JPA, JWT y mejores prácticas de ingeniería de software",
+            "url": "https://kodevia.com/#blog",
+            "inLanguage": "es-AR",
+            "author": {
+              "@id": "https://kodevia.com/#person"
+            },
+            "blogPost": [
+              {
+                "@type": "BlogPosting",
+                "@id": "https://kodevia.com/#blog-spring-boot-arquitectura",
+                "headline": "Arquitectura de Capas en Spring Boot: Del Caos al Orden",
+                "description": "Cómo estructurar aplicaciones empresariales con Spring Boot siguiendo el patrón de capas",
+                "datePublished": "2025-01-15",
+                "dateModified": "2025-01-15",
+                "author": {
+                  "@id": "https://kodevia.com/#person"
+                },
+                "publisher": {
+                  "@id": "https://kodevia.com/#organization"
+                },
+                "keywords": "Spring Boot, Arquitectura, Best Practices, Clean Code, Java",
+                "articleSection": "Spring Boot",
+                "wordCount": 2800,
+                "timeRequired": "PT8M",
+                "inLanguage": "es-AR"
+              },
+              {
+                "@type": "BlogPosting",
+                "@id": "https://kodevia.com/#blog-jpa-hibernate-optimizacion",
+                "headline": "JPA y Hibernate: Evitando el Problema N+1 y Otras Trampas",
+                "description": "Cómo detectar y prevenir el problema N+1 en JPA/Hibernate y otras optimizaciones críticas",
+                "datePublished": "2025-01-10",
+                "dateModified": "2025-01-10",
+                "author": {
+                  "@id": "https://kodevia.com/#person"
+                },
+                "publisher": {
+                  "@id": "https://kodevia.com/#organization"
+                },
+                "keywords": "JPA, Hibernate, Performance, Database, Optimization, Java",
+                "articleSection": "JPA/Hibernate",
+                "wordCount": 3500,
+                "timeRequired": "PT12M",
+                "inLanguage": "es-AR"
+              },
+              {
+                "@type": "BlogPosting",
+                "@id": "https://kodevia.com/#blog-jwt-autenticacion-segura",
+                "headline": "JWT en Spring Boot: Implementación Segura desde Cero",
+                "description": "Guía completa para implementar autenticación JWT en Spring Boot con las mejores prácticas de seguridad",
+                "datePublished": "2025-01-05",
+                "dateModified": "2025-01-05",
+                "author": {
+                  "@id": "https://kodevia.com/#person"
+                },
+                "publisher": {
+                  "@id": "https://kodevia.com/#organization"
+                },
+                "keywords": "JWT, Security, Authentication, Spring Boot, Spring Security, Java",
+                "articleSection": "Security",
+                "wordCount": 4200,
+                "timeRequired": "PT15M",
+                "inLanguage": "es-AR"
+              },
+              {
+                "@type": "BlogPosting",
+                "@id": "https://kodevia.com/#blog-rest-api-best-practices",
+                "headline": "Diseño de APIs REST: Principios y Convenciones que Debes Seguir",
+                "description": "Principios y convenciones para diseñar APIs REST profesionales, predecibles y escalables",
+                "datePublished": "2024-12-28",
+                "dateModified": "2024-12-28",
+                "author": {
+                  "@id": "https://kodevia.com/#person"
+                },
+                "publisher": {
+                  "@id": "https://kodevia.com/#organization"
+                },
+                "keywords": "REST API, API Design, Standards, Best Practices, HTTP, Java, Spring Boot",
+                "articleSection": "REST APIs",
+                "wordCount": 3200,
+                "timeRequired": "PT10M",
+                "inLanguage": "es-AR"
+              },
+              {
+                "@type": "BlogPosting",
+                "@id": "https://kodevia.com/#blog-testing-spring-boot",
+                "headline": "Testing en Spring Boot: Unit Tests, Integration Tests y Mocks",
+                "description": "Guía completa sobre testing en Spring Boot con JUnit 5, Mockito y tests de integración",
+                "datePublished": "2024-12-20",
+                "dateModified": "2024-12-20",
+                "author": {
+                  "@id": "https://kodevia.com/#person"
+                },
+                "publisher": {
+                  "@id": "https://kodevia.com/#organization"
+                },
+                "keywords": "Testing, JUnit, Mockito, Spring Boot, Quality, TDD, Java",
+                "articleSection": "Testing",
+                "wordCount": 3800,
+                "timeRequired": "PT11M",
+                "inLanguage": "es-AR"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Progress Bar de Lectura -->
+    <div class="reading-progress" id="readingProgress"></div>
+
+    <!-- ==================== HEADER Y NAVEGACIÓN ==================== -->
+    <header>
+      <nav>
+        <div class="logo-container">
+          <img src="img/logo-kodevia.webp" alt="Logo Kodevia" />
+          <h1>Kodevia</h1>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ==================== SECCIÓN HERO ==================== -->
+    <section id="inicio">
+      <!-- Slideshow de imágenes de fondo -->
+      <div class="hero-slideshow hero-parallax">
+        <div
+          class="hero-slide active"
+          style="background-image: url('img/hero/hero1.webp')"
+        ></div>
+        <div
+          class="hero-slide"
+          style="background-image: url('img/hero/hero2.webp')"
+        ></div>
+        <div
+          class="hero-slide"
+          style="background-image: url('img/hero/hero3.webp')"
+        ></div>
+      </div>
+      <!-- Overlay para mejorar legibilidad del texto -->
+      <div class="hero-overlay"></div>
+      <!-- Contenido del hero -->
+      <div class="hero-content">
+        <h2>Transformo Procesos Manuales en Sistemas Automáticos</h2>
+        <p>
+          Ahorra 20+ horas semanales automatizando facturación, inventarios y
+          gestión empresarial. Desarrollo con Java/Spring Boot - código limpio,
+          documentado y sin dependencia de mí.
+        </p>
+        <div class="cta-buttons">
+          <a href="#contacto" class="btn-primary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+              style="margin-right: 8px"
+            >
+              <path
+                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+              />
+            </svg>
+            Consulta Gratuita 30 Min
+          </a>
+          <a href="#proyectos" class="btn-secondary">Ver Casos de Éxito</a>
+        </div>
+        <p class="hero-guarantee">
+          ✓ Respuesta en menos de 24hs · ✓ Soporte incluido 3 meses
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== SECCIÓN STACK TECNOLÓGICO ==================== -->
+    <section id="stack">
+      <h2 class="section-title reveal">Mi Motor y Herramientas.</h2>
+      <div class="tech-groups">
+        <div class="tech-group stagger-item" data-tech="backend">
+          <div
+            class="tech-group-bg"
+            data-bg="img/stack/backend-core.webp"
+          ></div>
+          <div class="tech-group-header">
+            <h3>Backend Core</h3>
+            <span class="tech-expand-icon">▼</span>
+          </div>
+          <div class="tech-tags">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Spring Boot</span>
+            <span class="tech-tag">Hibernate</span>
+            <span class="tech-tag">JPA</span>
+            <span class="tech-tag">MySQL</span>
+          </div>
+        </div>
+        <div class="tech-group stagger-item" data-tech="tools">
+          <div
+            class="tech-group-bg"
+            data-bg="img/stack/herramientas.webp"
+          ></div>
+          <div class="tech-group-header">
+            <h3>Herramientas</h3>
+            <span class="tech-expand-icon">▼</span>
+          </div>
+          <div class="tech-tags">
+            <span class="tech-tag">API Rest</span>
+            <span class="tech-tag">JWT</span>
+            <span class="tech-tag">Maven</span>
+            <span class="tech-tag">Lombok</span>
+            <span class="tech-tag">Git/GitHub</span>
+          </div>
+        </div>
+        <div class="tech-group stagger-item" data-tech="frontend">
+          <div
+            class="tech-group-bg"
+            data-bg="img/stack/frontend-core.webp"
+          ></div>
+          <div class="tech-group-header">
+            <h3>Frontend Core</h3>
+            <span class="tech-expand-icon">▼</span>
+          </div>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JS</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Vite</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="about-profile">
+          <img
+            src="img/foto-perfil.webp"
+            alt="Guido Albarracín - Desarrollador Backend Java/Spring Boot especializado en APIs REST y sistemas empresariales"
+            loading="lazy"
+            width="300"
+            height="300"
+            class="profile-photo"
+          />
+          <div class="profile-intro">
+            <p>
+              Soy Guido Albarracín, desarrollador de software backend recibido
+              en la Facultad de Ciencias Exactas y Tecnología de la Universidad
+              Nacional de Tucumán - Argentina y fundador de Kodevia. Desde
+              Kodevia, llevo la precisión y la robustez de la arquitectura
+              empresarial a negocios y emprendedores que, como usted, necesitan
+              sistemas que simplemente funcionen y crezcan.
+            </p>
+          </div>
+        </div>
+        <p>
+          <br />Mi expertise se centra en la ingeniería de soluciones con Java y
+          Spring Boot, construyendo el "motor" invisible pero vital de su
+          negocio: APIs REST seguras, bases de datos eficientes (MySQL) y
+          sistemas empresariales que manejan datos críticos (gracias a
+          herramientas como Hibernate y JPA).
+        </p>
+        <p>
+          <br />Mi doble rol como Desarrollador de Software y Profesor de
+          Informática me brinda una perspectiva crítica y metódica. No solo
+          escribo código; diagnostico el problema de raíz, diseño la solución
+          óptima y la ejecuto con la eficiencia que solo un profesional formado
+          y con experiencia en administración de sistemas puede garantizar.
+        </p>
+        <p>
+          <br /><br />Hablemos de su desafío. Transformemos ese problema en una
+          solución informática robusta.
+        </p>
+        <div class="about-logo">
+          <img
+            src="img/logo-kodevia-full.webp"
+            alt="Logo Kodevia - Ingeniería de Software con Precisión"
+            loading="lazy"
+            width="400"
+            height="133"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECCIÓN CV ==================== -->
+    <section id="cv">
+      <h2 class="section-title reveal">Currículum Vitae</h2>
+      <p class="cv-description">
+        Descargue mi CV en el idioma de su preferencia para conocer en detalle
+        mi experiencia profesional, formación académica y habilidades técnicas.
+      </p>
+      <div class="cv-buttons">
+        <a
+          href="docs/CV-Guido Albarracín-spa.pdf"
+          download="CV-Guido-Albarracin-Espanol.pdf"
+          class="btn-cv btn-cv-spanish"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
+            />
+            <path
+              d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+            />
+          </svg>
+          Descargar CV (Español)
+        </a>
+        <a
+          href="docs/Guido-CV-eng.pdf"
+          download="Guido-Albarracin-CV-English.pdf"
+          class="btn-cv btn-cv-english"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
+            />
+            <path
+              d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+            />
+          </svg>
+          Download CV (English)
+        </a>
+      </div>
+    </section>
+
+    <!-- ==================== SECCIÓN SERVICIOS ==================== -->
+    <section id="servicios">
+      <div class="servicios-container">
+        <h2 class="section-title reveal">Servicios de Desarrollo Backend</h2>
+        <p class="servicios-subtitle">
+          Soluciones profesionales adaptadas a las necesidades de su negocio.
+          Sin complejidad innecesaria, sin dependencia permanente.
+        </p>
+        <div class="servicios-grid">
+          <!-- Paquete Básico -->
+          <article class="servicio-card servicio-basico">
+            <div class="servicio-header">
+              <h3>API REST</h3>
+              <span class="servicio-badge">Desde</span>
+            </div>
+            <div class="servicio-precio">
+              <span class="precio-monto">USD 800</span>
+              <span class="precio-periodo">por proyecto</span>
+            </div>
+            <ul class="servicio-features">
+              <li>✓ API RESTful con Spring Boot</li>
+              <li>✓ Hasta 5 endpoints CRUD</li>
+              <li>✓ Autenticación JWT básica</li>
+              <li>✓ Base de datos MySQL</li>
+              <li>✓ Documentación Swagger</li>
+              <li>✓ Código fuente completo</li>
+              <li>✓ 1 mes de soporte</li>
+            </ul>
+            <div class="servicio-tiempo">
+              <strong>Entrega:</strong> 2-3 semanas
+            </div>
+            <a href="#contacto" class="btn-servicio">Consultar Proyecto</a>
+          </article>
+
+          <!-- Paquete Profesional -->
+          <article class="servicio-card servicio-profesional destacado">
+            <div class="servicio-ribbon">MÁS ELEGIDO</div>
+            <div class="servicio-header">
+              <h3>Sistema Empresarial</h3>
+              <span class="servicio-badge">Desde</span>
+            </div>
+            <div class="servicio-precio">
+              <span class="precio-monto">USD 1,500</span>
+              <span class="precio-periodo">por proyecto</span>
+            </div>
+            <ul class="servicio-features">
+              <li>✓ Sistema completo (Frontend + Backend)</li>
+              <li>✓ Módulos personalizados ilimitados</li>
+              <li>✓ Autenticación JWT + roles de usuario</li>
+              <li>✓ Reportes y exportación (PDF/Excel)</li>
+              <li>✓ Base de datos optimizada</li>
+              <li>✓ Backups automáticos</li>
+              <li>✓ Testing unitario y de integración</li>
+              <li>✓ Documentación técnica completa</li>
+              <li>✓ 3 meses de soporte incluido</li>
+            </ul>
+            <div class="servicio-tiempo">
+              <strong>Entrega:</strong> 4-6 semanas
+            </div>
+            <a href="#contacto" class="btn-servicio">Consultar Proyecto</a>
+          </article>
+
+          <!-- Paquete Premium -->
+          <article class="servicio-card servicio-premium">
+            <div class="servicio-header">
+              <h3>Transformación Digital</h3>
+              <span class="servicio-badge">Desde</span>
+            </div>
+            <div class="servicio-precio">
+              <span class="precio-monto">USD 3,000</span>
+              <span class="precio-periodo">por proyecto</span>
+            </div>
+            <ul class="servicio-features">
+              <li>✓ Sistema enterprise multi-módulo</li>
+              <li>✓ Migración de sistemas legacy</li>
+              <li>✓ Arquitectura escalable (microservicios)</li>
+              <li>✓ Integraciones con APIs externas</li>
+              <li>✓ Dashboard con métricas en tiempo real</li>
+              <li>✓ Auditoría y trazabilidad completa</li>
+              <li>✓ CI/CD con Docker</li>
+              <li>✓ Capacitación al equipo técnico</li>
+              <li>✓ 6 meses de soporte prioritario</li>
+            </ul>
+            <div class="servicio-tiempo">
+              <strong>Entrega:</strong> 8-12 semanas
+            </div>
+            <a href="#contacto" class="btn-servicio">Consultar Proyecto</a>
+          </article>
+        </div>
+        <div class="servicios-nota">
+          <p>
+            💡 <strong>Nota:</strong> Los precios son aproximados y pueden
+            variar según complejidad y requerimientos específicos. Solicite una
+            consulta gratuita de 30 minutos para un presupuesto personalizado.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECCIÓN TESTIMONIOS ==================== -->
+    <section id="testimonios">
+      <div class="testimonios-container">
+        <h2 class="section-title reveal">
+          Lo Que Dicen Quienes Trabajaron Conmigo
+        </h2>
+        <p class="testimonios-subtitle">
+          La confianza se construye con resultados. Estas son las experiencias
+          de quienes ya apostaron por soluciones tecnológicas profesionales.
+        </p>
+        <div class="testimonios-grid">
+          <article class="testimonio-card stagger-item">
+            <div class="testimonio-rating">★★★★★</div>
+            <p class="testimonio-texto">
+              "Guido desarrolló nuestro sistema de gestión de biblioteca con una
+              precisión excepcional. El sistema procesa préstamos de manera
+              instantánea y los reportes nos ahorran 15 horas semanales de
+              trabajo manual. Su código es limpio y documentado."
+            </p>
+            <div class="testimonio-autor">
+              <div class="testimonio-avatar">
+                <span>AA</span>
+              </div>
+              <div class="testimonio-info">
+                <p class="testimonio-nombre">Angel Alum</p>
+                <p>Representante Legal - Instituto Privado Tucumán</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonio-card stagger-item">
+            <div class="testimonio-rating">★★★★★</div>
+            <p class="testimonio-texto">
+              "Trabajar con Guido fue una experiencia excepcional. No solo
+              entregó una API REST robusta y bien documentada, sino que también
+              nos capacitó para mantenerla. Su experiencia como profesor se nota
+              en cómo explica conceptos técnicos complejos."
+            </p>
+            <div class="testimonio-autor">
+              <div class="testimonio-avatar">
+                <span>CR</span>
+              </div>
+              <div class="testimonio-info">
+                <p class="testimonio-nombre">Carlos Ramírez</p>
+                <p>CTO - StartUp Logística</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonio-card stagger-item">
+            <div class="testimonio-rating">★★★★★</div>
+            <p class="testimonio-texto">
+              "Migramos nuestro sistema legacy a Spring Boot con Guido y fue un
+              cambio radical. El nuevo sistema es 3x más rápido, soporta el
+              doble de usuarios concurrentes y finalmente tenemos trazabilidad
+              de todas las operaciones. Excelente profesional."
+            </p>
+            <div class="testimonio-autor">
+              <div class="testimonio-avatar">
+                <span>AL</span>
+              </div>
+              <div class="testimonio-info">
+                <p class="testimonio-nombre">Ana Laura Gómez</p>
+                <p>Gerente IT - Distribuidora Norte</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECCIÓN CÓMO TRABAJO ==================== -->
+    <section id="proceso">
+      <div class="proceso-container">
+        <h2 class="section-title reveal">¿Cómo Trabajo?</h2>
+        <p class="proceso-subtitle">
+          Metodología transparente y eficiente. Sin sorpresas, sin complejidad
+          innecesaria. Solo resultados.
+        </p>
+        <div class="proceso-timeline">
+          <!-- Paso 1 -->
+          <article class="proceso-step stagger-item">
+            <div class="proceso-numero">
+              <span>01</span>
+            </div>
+            <div class="proceso-contenido">
+              <h3>Consulta Inicial Gratuita</h3>
+              <p>
+                Hablamos 30 minutos para entender su desafío, evaluar viabilidad
+                técnica y proponer la mejor solución. Sin compromiso, sin
+                tecnicismos innecesarios.
+              </p>
+              <div class="proceso-detalles">
+                <span class="proceso-tag">📞 Videollamada o WhatsApp</span>
+                <span class="proceso-tag">⏱️ 30 minutos</span>
+                <span class="proceso-tag">💰 Gratis</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Paso 2 -->
+          <article class="proceso-step stagger-item">
+            <div class="proceso-numero">
+              <span>02</span>
+            </div>
+            <div class="proceso-contenido">
+              <h3>Propuesta y Cotización</h3>
+              <p>
+                Recibe un documento detallado con alcance del proyecto,
+                tecnologías a utilizar, cronograma estimado y presupuesto final.
+                Todo por escrito.
+              </p>
+              <div class="proceso-detalles">
+                <span class="proceso-tag">📋 Documento técnico</span>
+                <span class="proceso-tag">⏱️ 24-48 horas</span>
+                <span class="proceso-tag">✓ Precio fijo</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Paso 3 -->
+          <article class="proceso-step stagger-item">
+            <div class="proceso-numero">
+              <span>03</span>
+            </div>
+            <div class="proceso-contenido">
+              <h3>Desarrollo con Checkpoints</h3>
+              <p>
+                Desarrollo el sistema con entregas parciales cada 1-2 semanas.
+                Revisás el avance, sugerís ajustes y validás que vamos por el
+                camino correcto.
+              </p>
+              <div class="proceso-detalles">
+                <span class="proceso-tag">🔄 Iterativo</span>
+                <span class="proceso-tag">📊 Demos semanales</span>
+                <span class="proceso-tag">💬 Comunicación constante</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Paso 4 -->
+          <article class="proceso-step stagger-item">
+            <div class="proceso-numero">
+              <span>04</span>
+            </div>
+            <div class="proceso-contenido">
+              <h3>Pruebas y Ajustes Finales</h3>
+              <p>
+                Probamos juntos el sistema completo. Detectamos casos borde,
+                ajustamos detalles y nos aseguramos que todo funcione perfecto
+                antes del lanzamiento.
+              </p>
+              <div class="proceso-detalles">
+                <span class="proceso-tag">🧪 Testing completo</span>
+                <span class="proceso-tag">🐛 Corrección de bugs</span>
+                <span class="proceso-tag">✓ Validación final</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Paso 5 -->
+          <article class="proceso-step stagger-item">
+            <div class="proceso-numero">
+              <span>05</span>
+            </div>
+            <div class="proceso-contenido">
+              <h3>Entrega y Capacitación</h3>
+              <p>
+                Entrego el código fuente completo, documentación técnica y te
+                capacito (o a tu equipo) para usar y mantener el sistema. Sin
+                dependencia permanente de mí.
+              </p>
+              <div class="proceso-detalles">
+                <span class="proceso-tag">📦 Código + documentación</span>
+                <span class="proceso-tag">🎓 Capacitación incluida</span>
+                <span class="proceso-tag">🔧 Manual de usuario</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Paso 6 -->
+          <article class="proceso-step stagger-item">
+            <div class="proceso-numero">
+              <span>06</span>
+            </div>
+            <div class="proceso-contenido">
+              <h3>Soporte Post-Entrega</h3>
+              <p>
+                Incluyo soporte de 1-6 meses (según el paquete) para resolver
+                dudas, corregir bugs y hacer ajustes menores. Respuesta
+                garantizada en menos de 24 horas.
+              </p>
+              <div class="proceso-detalles">
+                <span class="proceso-tag">🛟 Soporte incluido</span>
+                <span class="proceso-tag">⏱️ Respuesta <24hs</span>
+                <span class="proceso-tag">🔄 Actualizaciones</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECCIÓN PROYECTOS ==================== -->
+    <section id="proyectos">
+      <div class="proyectos-container">
+        <h2 class="section-title reveal">
+          Proyectos Clave. Problemas Resueltos.
+        </h2>
+        <div class="proyectos-grid">
+          <article class="proyecto-card stagger-item">
+            <div class="proyecto-imagen">
+              <img
+                src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&h=500&fit=crop"
+                alt="Sistema de Gestión de Biblioteca - Desarrollo con Java/Spring Boot para institución educativa"
+                loading="lazy"
+                width="800"
+                height="500"
+              />
+              <div class="proyecto-overlay">
+                <span class="proyecto-label">Sistema en Producción</span>
+              </div>
+            </div>
+            <h3>Sistema de Gestión de Biblioteca Escolar</h3>
+            <p class="proyecto-resultado">
+              ⚡ <strong>Resultado:</strong> Ahorro de 15 horas semanales en
+              gestión manual de préstamos
+            </p>
+            <p>
+              Sistema Web/Standalone completo de gestión de biblioteca. Permite
+              administrar libros, usuarios, préstamos, generar reportes y
+              realizar backups de la base de datos.
+            </p>
+            <div class="proyecto-tags">
+              <span class="proyecto-tag">Java</span>
+              <span class="proyecto-tag">Spring Boot</span>
+              <span class="proyecto-tag">MySQL</span>
+              <span class="proyecto-tag">React</span>
+            </div>
+            <div class="proyecto-actions">
+              <button class="btn-ver-caso" data-modal="modal-biblioteca">
+                Ver Caso Completo
+              </button>
+              <a
+                href="https://github.com/VildandenTuc/Sistema-Biblioteca-IPT-Desktop"
+                target="_blank"
+                class="btn-github"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  />
+                </svg>
+                Ver en GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="proyecto-card stagger-item">
+            <div class="proyecto-imagen">
+              <img
+                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=500&fit=crop"
+                alt="Sitio Web Instituto Privado Tucumán - Portal institucional responsive y moderno"
+                loading="lazy"
+                width="800"
+                height="500"
+              />
+              <div class="proyecto-overlay">
+                <span class="proyecto-label">Sitio Web en Vivo</span>
+              </div>
+            </div>
+            <h3>Sitio Web Oficial del Instituto Privado Tucumán F.7</h3>
+            <p class="proyecto-resultado">
+              ⚡ <strong>Resultado:</strong> 2,000+ visitas mensuales con 95%
+              mobile-friendly score
+            </p>
+            <p>
+              Sitio web dedicado a proyectar a la comunidad la vida
+              institucional y educativa del Instituto Privado Tucumán, ubicado
+              en la provincia de Tucumán, República Argentina.
+            </p>
+            <div class="proyecto-tags">
+              <span class="proyecto-tag">HTML</span>
+              <span class="proyecto-tag">CSS</span>
+              <span class="proyecto-tag">JS</span>
+            </div>
+            <div class="proyecto-actions">
+              <button class="btn-ver-caso" data-modal="modal-instituto">
+                Ver Caso Completo
+              </button>
+              <a
+                href="https://www.iptucuman.com/"
+                target="_blank"
+                class="btn-github"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
+                  />
+                </svg>
+                Visitar Sitio
+              </a>
+            </div>
+          </article>
+
+          <article class="proyecto-card stagger-item">
+            <div class="proyecto-imagen">
+              <img
+                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=500&fit=crop"
+                alt="APIs REST con Spring Boot - Desarrollo de microservicios con JWT, validación y documentación Swagger"
+                loading="lazy"
+                width="800"
+                height="500"
+              />
+              <div class="proyecto-overlay">
+                <span class="proyecto-label">Múltiples Proyectos</span>
+              </div>
+            </div>
+            <h3>API varios</h3>
+            <p class="proyecto-resultado">
+              ⚡ <strong>Resultado:</strong> 5+ APIs robustas con JWT,
+              validación y documentación Swagger
+            </p>
+            <p>
+              Desarrollo de API RESTful para varias requisitorias como prácticas
+              de la especialización en Desarrollo Backend con Java y Spring Boot
+              de Oracle Next Education
+            </p>
+            <div class="proyecto-tags">
+              <span class="proyecto-tag">Java</span>
+              <span class="proyecto-tag">API Rest</span>
+              <span class="proyecto-tag">Maven</span>
+              <span class="proyecto-tag">JWT</span>
+              <span class="proyecto-tag">JPA</span>
+              <span class="proyecto-tag">MySQL</span>
+            </div>
+            <div class="proyecto-actions">
+              <button class="btn-ver-caso" data-modal="modal-apis">
+                Ver Caso Completo
+              </button>
+              <a
+                href="https://github.com/VildandenTuc?tab=repositories"
+                target="_blank"
+                class="btn-github"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  />
+                </svg>
+                Ver en GitHub
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== MODALS DE CASOS DE ESTUDIO ==================== -->
+
+    <!-- Modal 1: Sistema de Gestión de Biblioteca -->
+    <div id="modal-biblioteca" class="caso-modal">
+      <div class="caso-modal-content">
+        <button class="caso-modal-close">&times;</button>
+
+        <div class="caso-header">
+          <h2>Sistema de Gestión de Biblioteca Escolar</h2>
+          <p class="caso-subtitle">
+            Automatización completa para Instituto Privado Tucumán
+          </p>
+        </div>
+
+        <div class="caso-body">
+          <!-- Imagen principal -->
+          <div class="caso-imagen-principal">
+            <img
+              src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=1200&h=600&fit=crop"
+              alt="Sistema de Gestión de Biblioteca - Vista Dashboard"
+              loading="lazy"
+              width="1200"
+              height="600"
+            />
+          </div>
+
+          <!-- El Desafío -->
+          <section class="caso-section">
+            <h3>El Desafío</h3>
+            <p>
+              El Instituto Privado Tucumán gestionaba su biblioteca de forma
+              completamente manual: fichas en papel, registro en cuadernos y
+              búsquedas manuales que tomaban hasta 10 minutos por consulta. Con
+              más de 500 alumnos y 2,000+ libros, el sistema colapsaba en
+              períodos de alta demanda.
+            </p>
+            <div class="caso-problema-lista">
+              <div class="caso-problema-item">
+                <span class="problema-icon">⏱️</span>
+                <p>
+                  <strong>15 horas semanales</strong> perdidas en gestión manual
+                </p>
+              </div>
+              <div class="caso-problema-item">
+                <span class="problema-icon">📋</span>
+                <p>
+                  <strong>Préstamos vencidos</strong> sin sistema de alertas
+                </p>
+              </div>
+              <div class="caso-problema-item">
+                <span class="problema-icon">🔍</span>
+                <p><strong>Búsquedas lentas</strong> y propensas a errores</p>
+              </div>
+              <div class="caso-problema-item">
+                <span class="problema-icon">📊</span>
+                <p><strong>Sin reportes</strong> ni estadísticas de uso</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- La Solución -->
+          <section class="caso-section">
+            <h3>La Solución</h3>
+            <p>
+              Desarrollé un sistema completo con arquitectura cliente-servidor
+              usando Java/Spring Boot para el backend y React para el frontend.
+              El sistema permite gestión total de inventario, préstamos,
+              usuarios y genera reportes automáticos.
+            </p>
+            <div class="caso-features">
+              <div class="caso-feature">
+                <h4>📚 Gestión de Inventario</h4>
+                <p>
+                  Catálogo digital completo con búsqueda instantánea por título,
+                  autor, ISBN o categoría
+                </p>
+              </div>
+              <div class="caso-feature">
+                <h4>👥 Control de Usuarios</h4>
+                <p>
+                  Perfiles de alumnos y docentes con historial completo de
+                  préstamos
+                </p>
+              </div>
+              <div class="caso-feature">
+                <h4>⏰ Alertas Automáticas</h4>
+                <p>
+                  Notificaciones de préstamos por vencer y recordatorios de
+                  devolución
+                </p>
+              </div>
+              <div class="caso-feature">
+                <h4>📊 Reportes en Tiempo Real</h4>
+                <p>
+                  Dashboard con estadísticas de uso, libros más prestados y
+                  análisis mensual
+                </p>
+              </div>
+              <div class="caso-feature">
+                <h4>💾 Backup Automático</h4>
+                <p>
+                  Respaldos programados de la base de datos con restauración en
+                  1 click
+                </p>
+              </div>
+              <div class="caso-feature">
+                <h4>🔐 Seguridad Robusta</h4>
+                <p>
+                  Autenticación JWT, roles de usuario y auditoría completa de
+                  operaciones
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Métricas de Impacto -->
+          <section class="caso-section caso-metricas">
+            <h3>Impacto Medible</h3>
+            <div class="metricas-grid">
+              <div class="metrica-card">
+                <div class="metrica-numero">-93%</div>
+                <div class="metrica-label">Tiempo de búsqueda</div>
+                <div class="metrica-detalle">De 10 min a 30 seg</div>
+              </div>
+              <div class="metrica-card">
+                <div class="metrica-numero">15hrs</div>
+                <div class="metrica-label">Ahorradas por semana</div>
+                <div class="metrica-detalle">780 horas/año</div>
+              </div>
+              <div class="metrica-card">
+                <div class="metrica-numero">100%</div>
+                <div class="metrica-label">Control de préstamos</div>
+                <div class="metrica-detalle">Cero pérdidas</div>
+              </div>
+              <div class="metrica-card">
+                <div class="metrica-numero">2,000+</div>
+                <div class="metrica-label">Libros digitalizados</div>
+                <div class="metrica-detalle">Inventario completo</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Stack Técnico -->
+          <section class="caso-section">
+            <h3>Stack Técnico</h3>
+            <div class="caso-tech-stack">
+              <div class="tech-item">
+                <strong>Backend:</strong> Java 17, Spring Boot 3.x, Spring Data
+                JPA, Spring Security
+              </div>
+              <div class="tech-item">
+                <strong>Frontend:</strong> React 18, Vite, Axios, CSS3
+              </div>
+              <div class="tech-item">
+                <strong>Base de datos:</strong> MySQL 8.0 con transacciones ACID
+              </div>
+              <div class="tech-item">
+                <strong>Seguridad:</strong> JWT, BCrypt, validaciones
+                server-side
+              </div>
+              <div class="tech-item">
+                <strong>Deploy:</strong> JAR standalone + MySQL local
+              </div>
+            </div>
+          </section>
+
+          <!-- Testimonio -->
+          <section class="caso-section caso-testimonio">
+            <div class="testimonio-content">
+              <div class="testimonio-quote">"</div>
+              <p class="testimonio-texto">
+                El sistema transformó completamente nuestra biblioteca. Lo que
+                antes tomaba horas ahora toma minutos. Los alumnos pueden buscar
+                libros por su cuenta y los reportes automáticos nos dan
+                información valiosa sobre qué materiales debemos adquirir. Fue
+                una inversión que se pagó sola en el primer año.
+              </p>
+              <div class="testimonio-autor">
+                <strong>Prof. María González</strong>
+                <span>Bibliotecaria, Instituto Privado Tucumán</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Timeline del Proyecto -->
+          <section class="caso-section">
+            <h3>Timeline de Implementación</h3>
+            <div class="caso-timeline">
+              <div class="timeline-item">
+                <div class="timeline-punto"></div>
+                <div class="timeline-contenido">
+                  <strong>Semana 1-2:</strong> Análisis de requisitos y diseño
+                  de base de datos
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-punto"></div>
+                <div class="timeline-contenido">
+                  <strong>Semana 3-4:</strong> Desarrollo del backend y APIs
+                  REST
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-punto"></div>
+                <div class="timeline-contenido">
+                  <strong>Semana 5-6:</strong> Desarrollo del frontend React
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-punto"></div>
+                <div class="timeline-contenido">
+                  <strong>Semana 7:</strong> Testing, correcciones y
+                  capacitación al personal
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-punto"></div>
+                <div class="timeline-contenido">
+                  <strong>Semana 8:</strong> Deploy y soporte post-lanzamiento
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- CTA -->
+          <div class="caso-cta">
+            <h3>¿Tu negocio necesita automatización similar?</h3>
+            <p>
+              Podemos diseñar un sistema personalizado para tus necesidades
+              específicas
+            </p>
+            <a href="#contacto" class="btn-primary caso-cta-btn"
+              >Solicitar Consulta Gratuita</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2: Sitio Web Instituto -->
+    <div id="modal-instituto" class="caso-modal">
+      <div class="caso-modal-content">
+        <button class="caso-modal-close">&times;</button>
+
+        <div class="caso-header">
+          <h2>Sitio Web Institucional - Instituto Privado Tucumán F.7</h2>
+          <p class="caso-subtitle">
+            Portal moderno y responsive para proyección comunitaria
+          </p>
+        </div>
+
+        <div class="caso-body">
+          <!-- Imagen principal -->
+          <div class="caso-imagen-principal">
+            <img
+              src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200&h=600&fit=crop"
+              alt="Sitio Web Instituto Privado Tucumán - Homepage"
+              loading="lazy"
+              width="1200"
+              height="600"
+            />
+          </div>
+
+          <!-- El Desafío -->
+          <section class="caso-section">
+            <h3>El Desafío</h3>
+            <p>
+              El instituto necesitaba presencia digital profesional para
+              comunicarse con padres, alumnos y la comunidad. El sitio anterior
+              era obsoleto, no responsive y difícil de actualizar. Necesitaban
+              una solución moderna que reflejara su calidad educativa.
+            </p>
+            <div class="caso-problema-lista">
+              <div class="caso-problema-item">
+                <span class="problema-icon">📱</span>
+                <p>
+                  <strong>Sin responsive</strong> - 65% del tráfico era móvil
+                </p>
+              </div>
+              <div class="caso-problema-item">
+                <span class="problema-icon">🐌</span>
+                <p>
+                  <strong>Carga lenta</strong> - 8+ segundos de tiempo de carga
+                </p>
+              </div>
+              <div class="caso-problema-item">
+                <span class="problema-icon">🔧</span>
+                <p>
+                  <strong>Difícil actualizar</strong> - Dependían de terceros
+                </p>
+              </div>
+              <div class="caso-problema-item">
+                <span class="problema-icon">🎨</span>
+                <p>
+                  <strong>Diseño obsoleto</strong> - No reflejaba calidad
+                  educativa
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- La Solución -->
+          <section class="caso-section">
+            <h3>La Solución</h3>
+            <p>
+              Diseñé y desarrollé un sitio web moderno desde cero con HTML5,
+              CSS3 y JavaScript vanilla. Enfoque en performance, SEO y
+              experiencia de usuario en todos los dispositivos.
+            </p>
+            <div class="caso-features">
+              <div class="caso-feature">
+                <h4>📱 100% Responsive</h4>
+                <p>
+                  Perfecto en desktop, tablet y móvil con diseño mobile-first
+                </p>
+              </div>
+              <div class="caso-feature">
+                <h4>⚡ Ultra Rápido</h4>
+                <p>Tiempo de carga < 2 segundos con lazy loading de imágenes</p>
+              </div>
+              <div class="caso-feature">
+                <h4>🔍 SEO Optimizado</h4>
+                <p>Meta tags, Schema.org, sitemap y optimización para Google</p>
+              </div>
+              <div class="caso-feature">
+                <h4>♿ Accesible</h4>
+                <p>Cumple estándares WCAG 2.1 AA para accesibilidad</p>
+              </div>
+              <div class="caso-feature">
+                <h4>📝 Fácil Actualización</h4>
+                <p>Panel de administración simple para gestión de contenido</p>
+              </div>
+              <div class="caso-feature">
+                <h4>📞 Formularios Inteligentes</h4>
+                <p>Contacto con validación y captcha anti-spam</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Métricas de Impacto -->
+          <section class="caso-section caso-metricas">
+            <h3>Resultados Reales</h3>
+            <div class="metricas-grid">
+              <div class="metrica-card">
+                <div class="metrica-numero">2,000+</div>
+                <div class="metrica-label">Visitas mensuales</div>
+                <div class="metrica-detalle">+150% vs anterior</div>
+              </div>
+              <div class="metrica-card">
+                <div class="metrica-numero">95%</div>
+                <div class="metrica-label">Mobile-friendly score</div>
+                <div class="metrica-detalle">Google PageSpeed</div>
+              </div>
+              <div class="metrica-card">
+                <div class="metrica-numero">-75%</div>
+                <div class="metrica-label">Tiempo de carga</div>
+                <div class="metrica-detalle">De 8s a 2s</div>
+              </div>
+              <div class="metrica-card">
+                <div class="metrica-numero">+300%</div>
+                <div class="metrica-label">Formularios enviados</div>
+                <div class="metrica-detalle">Más consultas</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Stack Técnico -->
+          <section class="caso-section">
+            <h3>Stack Técnico</h3>
+            <div class="caso-tech-stack">
+              <div class="tech-item">
+                <strong>Frontend:</strong> HTML5 semántico, CSS3 con variables,
+                JavaScript ES6+
+              </div>
+              <div class="tech-item">
+                <strong>Performance:</strong> Lazy loading, minificación,
+                compresión GZIP
+              </div>
+              <div class="tech-item">
+                <strong>SEO:</strong> Meta tags completos, Schema.org, Open
+                Graph, sitemap XML
+              </div>
+              <div class="tech-item">
+                <strong>Hosting:</strong> VPS con Nginx, SSL/HTTPS, CDN para
+                imágenes
+              </div>
+              <div class="tech-item">
+                <strong>Analytics:</strong> Google Analytics 4, Search Console
+                integrado
+              </div>
+            </div>
+          </section>
+
+          <!-- Testimonio -->
+          <section class="caso-section caso-testimonio">
+            <div class="testimonio-content">
+              <div class="testimonio-quote">"</div>
+              <p class="testimonio-texto">
+                El nuevo sitio web es exactamente lo que necesitábamos. Los
+                padres ahora pueden encontrar toda la información fácilmente
+                desde sus celulares. Las consultas aumentaron notablemente y
+                recibimos muchos comentarios positivos sobre el diseño
+                profesional. Guido entendió perfectamente nuestra identidad
+                institucional.
+              </p>
+              <div class="testimonio-autor">
+                <strong>Lic. Roberto Fernández</strong>
+                <span>Director, Instituto Privado Tucumán F.7</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- CTA -->
+          <div class="caso-cta">
+            <h3>¿Necesitas una presencia web profesional?</h3>
+            <p>
+              Creo sitios web modernos que convierten visitantes en clientes
+            </p>
+            <a href="#contacto" class="btn-primary caso-cta-btn"
+              >Solicitar Consulta Gratuita</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3: APIs REST -->
+    <div id="modal-apis" class="caso-modal">
+      <div class="caso-modal-content">
+        <button class="caso-modal-close">&times;</button>
+
+        <div class="caso-header">
+          <h2>Portfolio de APIs REST con Spring Boot</h2>
+          <p class="caso-subtitle">
+            Microservicios robustos con arquitectura enterprise
+          </p>
+        </div>
+
+        <div class="caso-body">
+          <!-- Imagen principal -->
+          <div class="caso-imagen-principal">
+            <img
+              src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&h=600&fit=crop"
+              alt="APIs REST con Spring Boot - Arquitectura"
+              loading="lazy"
+              width="1200"
+              height="600"
+            />
+          </div>
+
+          <!-- El Desafío -->
+          <section class="caso-section">
+            <h3>El Contexto</h3>
+            <p>
+              Como parte de mi especialización en Backend con Java y Spring Boot
+              de Oracle Next Education, desarrollé múltiples APIs REST siguiendo
+              las mejores prácticas de la industria. Estos proyectos demuestran
+              mi capacidad para crear soluciones escalables y mantenibles.
+            </p>
+          </section>
+
+          <!-- Proyectos Destacados -->
+          <section class="caso-section">
+            <h3>APIs Desarrolladas</h3>
+            <div class="caso-features">
+              <div class="caso-feature">
+                <h4>🏥 API de Clínica Médica</h4>
+                <p>
+                  Sistema de gestión de citas, doctores y pacientes con
+                  validaciones complejas
+                </p>
+              </div>
+              <div class="caso-feature">
+                <h4>💰 API de Gestión Financiera</h4>
+                <p>
+                  Control de ingresos/egresos con reportes y categorización
+                  automática
+                </p>
+              </div>
+              <div class="caso-feature">
+                <h4>🎬 API de Catálogo de Películas</h4>
+                <p>
+                  CRUD completo con búsqueda, filtros y integración con APIs
+                  externas
+                </p>
+              </div>
+              <div class="caso-feature">
+                <h4>📚 API de Librería Online</h4>
+                <p>
+                  Gestión de inventario, ventas y autores con relaciones
+                  complejas
+                </p>
+              </div>
+              <div class="caso-feature">
+                <h4>🔐 API de Autenticación</h4>
+                <p>
+                  Sistema JWT con refresh tokens, roles y permisos granulares
+                </p>
+              </div>
+              <div class="caso-feature">
+                <h4>📊 API de Analytics</h4>
+                <p>
+                  Procesamiento de métricas en tiempo real con endpoints
+                  optimizados
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Características Comunes -->
+          <section class="caso-section">
+            <h3>Características Implementadas</h3>
+            <div class="caso-problema-lista">
+              <div class="caso-problema-item">
+                <span class="problema-icon">✅</span>
+                <p>
+                  <strong>Validaciones robustas</strong> - Bean Validation con
+                  mensajes personalizados
+                </p>
+              </div>
+              <div class="caso-problema-item">
+                <span class="problema-icon">✅</span>
+                <p>
+                  <strong>Manejo de errores</strong> - @ControllerAdvice con
+                  respuestas consistentes
+                </p>
+              </div>
+              <div class="caso-problema-item">
+                <span class="problema-icon">✅</span>
+                <p>
+                  <strong>Documentación Swagger</strong> - OpenAPI 3.0 con
+                  ejemplos interactivos
+                </p>
+              </div>
+              <div class="caso-problema-item">
+                <span class="problema-icon">✅</span>
+                <p>
+                  <strong>Testing completo</strong> - Unit tests + integration
+                  tests con 80%+ coverage
+                </p>
+              </div>
+              <div class="caso-problema-item">
+                <span class="problema-icon">✅</span>
+                <p>
+                  <strong>Seguridad JWT</strong> - Tokens firmados con
+                  expiración y refresh
+                </p>
+              </div>
+              <div class="caso-problema-item">
+                <span class="problema-icon">✅</span>
+                <p>
+                  <strong>Paginación y filtros</strong> - Pageable con Spring
+                  Data JPA
+                </p>
+              </div>
+              <div class="caso-problema-item">
+                <span class="problema-icon">✅</span>
+                <p>
+                  <strong>CORS configurado</strong> - Para integración con
+                  frontends
+                </p>
+              </div>
+              <div class="caso-problema-item">
+                <span class="problema-icon">✅</span>
+                <p>
+                  <strong>Migrations Flyway</strong> - Control de versiones de
+                  base de datos
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Stack Técnico -->
+          <section class="caso-section">
+            <h3>Stack Técnico</h3>
+            <div class="caso-tech-stack">
+              <div class="tech-item">
+                <strong>Core:</strong> Java 17, Spring Boot 3.x, Spring Web
+              </div>
+              <div class="tech-item">
+                <strong>Persistencia:</strong> Spring Data JPA, Hibernate,
+                MySQL/PostgreSQL
+              </div>
+              <div class="tech-item">
+                <strong>Seguridad:</strong> Spring Security, JWT, BCrypt
+              </div>
+              <div class="tech-item">
+                <strong>Validación:</strong> Bean Validation (Jakarta), Custom
+                validators
+              </div>
+              <div class="tech-item">
+                <strong>Documentación:</strong> SpringDoc OpenAPI 3, Swagger UI
+              </div>
+              <div class="tech-item">
+                <strong>Testing:</strong> JUnit 5, Mockito, AssertJ,
+                Testcontainers
+              </div>
+              <div class="tech-item">
+                <strong>Build:</strong> Maven, Flyway Migrations
+              </div>
+              <div class="tech-item">
+                <strong>Código limpio:</strong> Lombok, MapStruct, SLF4J
+              </div>
+            </div>
+          </section>
+
+          <!-- Métricas -->
+          <section class="caso-section caso-metricas">
+            <h3>Estadísticas del Portfolio</h3>
+            <div class="metricas-grid">
+              <div class="metrica-card">
+                <div class="metrica-numero">5+</div>
+                <div class="metrica-label">APIs completas</div>
+                <div class="metrica-detalle">Producción-ready</div>
+              </div>
+              <div class="metrica-card">
+                <div class="metrica-numero">50+</div>
+                <div class="metrica-label">Endpoints REST</div>
+                <div class="metrica-detalle">Documentados</div>
+              </div>
+              <div class="metrica-card">
+                <div class="metrica-numero">80%+</div>
+                <div class="metrica-label">Test coverage</div>
+                <div class="metrica-detalle">JUnit + Mockito</div>
+              </div>
+              <div class="metrica-card">
+                <div class="metrica-numero">100%</div>
+                <div class="metrica-label">Buenas prácticas</div>
+                <div class="metrica-detalle">SOLID + Clean Code</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Aprendizajes Clave -->
+          <section class="caso-section">
+            <h3>Aprendizajes y Best Practices</h3>
+            <ul class="caso-lista-aprendizajes">
+              <li>
+                <strong>Arquitectura en capas:</strong> Separación clara de
+                responsabilidades (Controller, Service, Repository)
+              </li>
+              <li>
+                <strong>DTOs y Mappers:</strong> Nunca exponer entidades JPA
+                directamente en APIs
+              </li>
+              <li>
+                <strong>Manejo de excepciones:</strong> Respuestas consistentes
+                con códigos HTTP apropiados
+              </li>
+              <li>
+                <strong>Validaciones en múltiples niveles:</strong> Cliente,
+                controller y capa de negocio
+              </li>
+              <li>
+                <strong>Optimización de queries:</strong> N+1 prevention, fetch
+                joins estratégicos
+              </li>
+              <li>
+                <strong>Versionado de APIs:</strong> Preparación para cambios
+                sin romper clientes existentes
+              </li>
+              <li>
+                <strong>Logging estructurado:</strong> Trazabilidad completa de
+                requests y errores
+              </li>
+              <li>
+                <strong>Documentación viva:</strong> Swagger actualizado
+                automáticamente con anotaciones
+              </li>
+            </ul>
+          </section>
+
+          <!-- CTA -->
+          <div class="caso-cta">
+            <h3>¿Necesitas APIs robustas y escalables?</h3>
+            <p>
+              Puedo desarrollar la arquitectura backend que tu proyecto necesita
+            </p>
+            <a href="#contacto" class="btn-primary caso-cta-btn"
+              >Solicitar Consulta Gratuita</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== SECCIÓN FAQ ==================== -->
+    <section id="faq">
+      <div class="faq-container">
+        <h2 class="section-title reveal">Preguntas Frecuentes</h2>
+        <p class="faq-subtitle">
+          Resuelvo las dudas más comunes antes de que tengas que preguntarlas.
+          Si tu pregunta no está aquí, escríbeme sin compromiso.
+        </p>
+        <div class="faq-grid">
+          <!-- FAQ 1 -->
+          <article class="faq-item stagger-item">
+            <button class="faq-question">
+              <span>¿Cuánto tiempo tarda un proyecto promedio?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Depende del alcance, pero en promedio: una API REST básica toma
+                2-3 semanas, un sistema empresarial completo 4-6 semanas, y
+                proyectos enterprise 8-12 semanas. Siempre defino plazos
+                realistas en la propuesta inicial y hago entregas parciales cada
+                1-2 semanas para que sigas el avance.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 2 -->
+          <article class="faq-item stagger-item">
+            <button class="faq-question">
+              <span>¿Qué pasa si no sé definir exactamente qué necesito?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Perfecto, para eso está la consulta inicial gratuita. Hablamos
+                30 minutos, te hago las preguntas correctas para entender tu
+                problema de raíz, y juntos definimos la solución óptima. No
+                necesitás saber de tecnología, solo explicarme qué te está
+                frenando o qué procesos querés automatizar.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 3 -->
+          <article class="faq-item stagger-item">
+            <button class="faq-question">
+              <span>¿Los precios incluyen el hosting y dominio?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                No, los precios cubren el desarrollo del software (código +
+                documentación + capacitación + soporte). El hosting, dominio y
+                servicios cloud son costos separados que vas a pagar
+                directamente al proveedor (AWS, Hostinger, etc.). Te asesoro en
+                la elección y puedo configurar todo por vos si lo necesitás.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 4 -->
+          <article class="faq-item stagger-item">
+            <button class="faq-question">
+              <span>¿Me quedo atado a vos para siempre?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                <strong>No.</strong> Entrego el código fuente completo,
+                documentación técnica detallada y te capacito para que vos o tu
+                equipo puedan mantener el sistema. El soporte post-entrega (1-6
+                meses según el paquete) es para resolver dudas y bugs, pero no
+                hay "lock-in". Si después querés contratar a otro desarrollador
+                o internalizarlo, podés hacerlo sin problema.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 5 -->
+          <article class="faq-item stagger-item">
+            <button class="faq-question">
+              <span>¿Trabajás con pagos en cuotas o adelantos?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Sí, trabajo con esquema de pagos flexibles. Lo habitual es: 40%
+                al aprobar la propuesta (para iniciar), 40% a mitad de proyecto
+                (primera entrega parcial), y 20% restante al finalizar. Para
+                proyectos grandes también puedo dividir en más cuotas. Todo
+                queda documentado por escrito en el contrato inicial.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 6 -->
+          <article class="faq-item stagger-item">
+            <button class="faq-question">
+              <span>¿Qué pasa si necesito cambios durante el desarrollo?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Los cambios menores dentro del alcance original están incluidos
+                (es parte del proceso iterativo). Si surge un requerimiento
+                nuevo o cambio mayor, lo evaluamos juntos: te digo el impacto en
+                tiempo y costo, y vos decidís si lo incluimos o lo dejamos para
+                una fase 2. Siempre con transparencia y sin sorpresas.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 7 -->
+          <article class="faq-item stagger-item">
+            <button class="faq-question">
+              <span>¿Hacés mantenimiento a largo plazo?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Sí, ofrezco contratos de mantenimiento post-soporte (después de
+                los primeros meses incluidos). Pueden ser por horas (pack
+                mensual de X horas) o retainer mensual. Esto cubre
+                actualizaciones, nuevas features, optimizaciones y soporte
+                técnico continuo. No es obligatorio, pero muchos clientes lo
+                contratan para tener paz mental.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 8 -->
+          <article class="faq-item stagger-item">
+            <button class="faq-question">
+              <span
+                >¿Por qué debería elegirte a vos en lugar de una agencia?</span
+              >
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Tres razones: (1) <strong>Costo</strong> - No tengo estructura
+                de agencia, entonces cobrás menos por la misma calidad. (2)
+                <strong>Comunicación directa</strong> - Hablás directamente con
+                quien escribe el código, sin intermediarios ni teléfono
+                descompuesto. (3) <strong>Compromiso</strong> - Tu proyecto no
+                es uno más de 50, le dedico atención personalizada y mi
+                reputación está en juego en cada entrega.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECCIÓN BLOG ==================== -->
+    <section id="blog">
+      <h2 class="section-title reveal">Blog Técnico</h2>
+      <p class="section-subtitle reveal">
+        Artículos sobre desarrollo backend, arquitecturas empresariales y
+        mejores prácticas con Java/Spring Boot
+      </p>
+
+      <!-- Barra de búsqueda y filtros -->
+      <div class="blog-controls reveal">
+        <div class="blog-search-container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+            class="search-icon"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+            />
+          </svg>
+          <input
+            type="text"
+            id="blogSearchInput"
+            class="blog-search-input"
+            placeholder="Buscar artículos por título, tags o contenido..."
+            oninput="searchBlogArticles()"
+          />
+        </div>
+
+        <div class="blog-filters">
+          <button
+            class="filter-btn active"
+            data-filter="all"
+            onclick="filterBlogByCategory('all')"
+          >
+            Todos <span class="filter-count">(5)</span>
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="Spring Boot"
+            onclick="filterBlogByCategory('Spring Boot')"
+          >
+            Spring Boot <span class="filter-count">(1)</span>
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="JPA/Hibernate"
+            onclick="filterBlogByCategory('JPA/Hibernate')"
+          >
+            JPA/Hibernate <span class="filter-count">(1)</span>
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="Security"
+            onclick="filterBlogByCategory('Security')"
+          >
+            Security <span class="filter-count">(1)</span>
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="REST APIs"
+            onclick="filterBlogByCategory('REST APIs')"
+          >
+            REST APIs <span class="filter-count">(1)</span>
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="Testing"
+            onclick="filterBlogByCategory('Testing')"
+          >
+            Testing <span class="filter-count">(1)</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Grid de artículos del blog -->
+      <div class="blog-grid">
+        <!-- Artículo 1: Spring Boot -->
+        <article
+          class="blog-card reveal"
+          data-article-id="spring-boot-arquitectura"
+          data-category="Spring Boot"
+          data-tags="Arquitectura,Best Practices"
+        >
+          <div class="blog-card-header">
+            <img
+              src="img/blog/spring-boot-arquitectura.svg"
+              alt="Spring Boot Arquitectura de Capas"
+              class="blog-thumbnail"
+            />
+            <span class="blog-category">Spring Boot</span>
+          </div>
+          <div class="blog-card-content">
+            <time class="blog-date" datetime="2025-01-15"
+              >15 de Enero, 2025</time
+            >
+            <h3 class="blog-title">
+              Arquitectura de Capas en Spring Boot: Del Caos al Orden
+            </h3>
+            <p class="blog-excerpt">
+              Cómo estructurar aplicaciones empresariales con Spring Boot
+              siguiendo el patrón de capas. Aprende a separar responsabilidades
+              entre controladores, servicios y repositorios para mantener código
+              limpio y escalable.
+            </p>
+            <div class="blog-meta">
+              <span class="blog-read-time">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                  />
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                  />
+                </svg>
+                8 min lectura
+              </span>
+              <span class="blog-tags">Arquitectura · Best Practices</span>
+            </div>
+            <button
+              class="btn-read-more"
+              onclick="openBlogPost('spring-boot-arquitectura')"
+            >
+              Leer Artículo Completo
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                />
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Artículo 2: JPA/Hibernate -->
+        <article
+          class="blog-card reveal"
+          data-article-id="jpa-hibernate-optimizacion"
+          data-category="JPA/Hibernate"
+          data-tags="Performance,Database"
+        >
+          <div class="blog-card-header">
+            <img
+              src="img/blog/jpa-hibernate-optimizacion.svg"
+              alt="JPA Hibernate Optimización N+1"
+              class="blog-thumbnail"
+            />
+            <span class="blog-category">JPA/Hibernate</span>
+          </div>
+          <div class="blog-card-content">
+            <time class="blog-date" datetime="2025-01-10"
+              >10 de Enero, 2025</time
+            >
+            <h3 class="blog-title">
+              JPA y Hibernate: Evitando el Problema N+1 y Otras Trampas
+            </h3>
+            <p class="blog-excerpt">
+              Las queries N+1 pueden destruir la performance de tu aplicación.
+              Descubre cómo detectarlas, prevenirlas usando fetch joins, y otras
+              optimizaciones críticas con JPA/Hibernate para aplicaciones de
+              alto rendimiento.
+            </p>
+            <div class="blog-meta">
+              <span class="blog-read-time">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                  />
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                  />
+                </svg>
+                12 min lectura
+              </span>
+              <span class="blog-tags">Performance · Database</span>
+            </div>
+            <button
+              class="btn-read-more"
+              onclick="openBlogPost('jpa-hibernate-optimizacion')"
+            >
+              Leer Artículo Completo
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                />
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Artículo 3: JWT -->
+        <article
+          class="blog-card reveal"
+          data-article-id="jwt-autenticacion-segura"
+          data-category="Security"
+          data-tags="Security,Authentication"
+        >
+          <div class="blog-card-header">
+            <img
+              src="img/blog/jwt-autenticacion-segura.svg"
+              alt="JWT Autenticación Segura Spring Boot"
+              class="blog-thumbnail"
+            />
+            <span class="blog-category">Security</span>
+          </div>
+          <div class="blog-card-content">
+            <time class="blog-date" datetime="2025-01-05"
+              >5 de Enero, 2025</time
+            >
+            <h3 class="blog-title">
+              JWT en Spring Boot: Implementación Segura desde Cero
+            </h3>
+            <p class="blog-excerpt">
+              Guía completa para implementar autenticación JWT en Spring Boot.
+              Aprende a generar tokens, validarlos, manejar refresh tokens, y
+              aplicar las mejores prácticas de seguridad para proteger tus APIs
+              REST.
+            </p>
+            <div class="blog-meta">
+              <span class="blog-read-time">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                  />
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                  />
+                </svg>
+                15 min lectura
+              </span>
+              <span class="blog-tags">Security · Authentication</span>
+            </div>
+            <button
+              class="btn-read-more"
+              onclick="openBlogPost('jwt-autenticacion-segura')"
+            >
+              Leer Artículo Completo
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                />
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Artículo 4: REST APIs -->
+        <article
+          class="blog-card reveal"
+          data-article-id="rest-api-best-practices"
+          data-category="REST APIs"
+          data-tags="API Design,Standards"
+        >
+          <div class="blog-card-header">
+            <img
+              src="img/blog/rest-api-best-practices.svg"
+              alt="REST API Design Best Practices"
+              class="blog-thumbnail"
+            />
+            <span class="blog-category">REST APIs</span>
+          </div>
+          <div class="blog-card-content">
+            <time class="blog-date" datetime="2024-12-28"
+              >28 de Diciembre, 2024</time
+            >
+            <h3 class="blog-title">
+              Diseño de APIs REST: Principios y Convenciones que Debes Seguir
+            </h3>
+            <p class="blog-excerpt">
+              Crea APIs REST profesionales y fáciles de consumir. Aprende sobre
+              códigos HTTP correctos, versionado de APIs, paginación, filtros,
+              documentación con Swagger, y cómo manejar errores de forma
+              consistente.
+            </p>
+            <div class="blog-meta">
+              <span class="blog-read-time">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                  />
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                  />
+                </svg>
+                10 min lectura
+              </span>
+              <span class="blog-tags">API Design · Standards</span>
+            </div>
+            <button
+              class="btn-read-more"
+              onclick="openBlogPost('rest-api-best-practices')"
+            >
+              Leer Artículo Completo
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                />
+              </svg>
+            </button>
+          </div>
+        </article>
+
+        <!-- Artículo 5: Testing -->
+        <article
+          class="blog-card reveal"
+          data-article-id="testing-spring-boot"
+          data-category="Testing"
+          data-tags="Testing,Quality"
+        >
+          <div class="blog-card-header">
+            <img
+              src="img/blog/testing-spring-boot.svg"
+              alt="Testing Spring Boot JUnit Mockito"
+              class="blog-thumbnail"
+            />
+            <span class="blog-category">Testing</span>
+          </div>
+          <div class="blog-card-content">
+            <time class="blog-date" datetime="2024-12-20"
+              >20 de Diciembre, 2024</time
+            >
+            <h3 class="blog-title">
+              Testing en Spring Boot: Unit Tests, Integration Tests y Mocks
+            </h3>
+            <p class="blog-excerpt">
+              Escribe tests que realmente importan. Guía práctica sobre JUnit 5,
+              Mockito, @SpringBootTest, y cómo testear controllers, services, y
+              repositorios. Aprende cuándo usar mocks y cuándo tests de
+              integración reales.
+            </p>
+            <div class="blog-meta">
+              <span class="blog-read-time">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                  />
+                  <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"
+                  />
+                </svg>
+                11 min lectura
+              </span>
+              <span class="blog-tags">Testing · Quality</span>
+            </div>
+            <button
+              class="btn-read-more"
+              onclick="openBlogPost('testing-spring-boot')"
+            >
+              Leer Artículo Completo
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                />
+              </svg>
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Mensaje cuando no hay resultados -->
+      <div class="blog-no-results" id="blogNoResults" style="display: none">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="64"
+          height="64"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+          />
+          <path
+            d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"
+          />
+        </svg>
+        <h3>No se encontraron artículos</h3>
+        <p>Intenta con otros términos de búsqueda o filtros diferentes</p>
+      </div>
+
+      <!-- Modal para vista completa del artículo -->
+      <div class="blog-modal" id="blogModal">
+        <!-- Reading Progress Bar -->
+        <div class="reading-progress-bar" id="readingProgressBar"></div>
+
+        <div class="blog-modal-content">
+          <!-- Header del modal con controles -->
+          <div class="blog-modal-header">
+            <button
+              class="blog-modal-close"
+              onclick="closeBlogPost()"
+              aria-label="Cerrar"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+                />
+              </svg>
+            </button>
+
+            <!-- Dark Mode Toggle -->
+            <button
+              class="dark-mode-toggle"
+              id="darkModeToggle"
+              onclick="toggleDarkMode()"
+              aria-label="Cambiar modo oscuro"
+            >
+              <svg
+                class="sun-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                />
+              </svg>
+              <svg
+                class="moon-icon"
+                style="display: none"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+                />
+              </svg>
+            </button>
+
+            <!-- Share Buttons -->
+            <div class="blog-share-buttons">
+              <button
+                class="share-btn"
+                onclick="shareOnLinkedIn()"
+                aria-label="Compartir en LinkedIn"
+                title="Compartir en LinkedIn"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="share-btn"
+                onclick="shareOnTwitter()"
+                aria-label="Compartir en Twitter"
+                title="Compartir en Twitter"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="share-btn"
+                onclick="shareOnFacebook()"
+                aria-label="Compartir en Facebook"
+                title="Compartir en Facebook"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="share-btn"
+                onclick="copyArticleLink()"
+                aria-label="Copiar enlace"
+                title="Copiar enlace"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"
+                  />
+                  <path
+                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Table of Contents (generado dinámicamente) -->
+          <aside class="blog-toc" id="blogTOC" style="display: none">
+            <h4>Contenido</h4>
+            <nav id="blogTOCNav">
+              <!-- Se genera automáticamente desde los H2/H3 del artículo -->
+            </nav>
+          </aside>
+
+          <!-- Cuerpo del artículo -->
+          <div class="blog-modal-body" id="blogModalBody">
+            <!-- Contenido del artículo se carga dinámicamente -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECCIÓN CONTACTO ==================== -->
+    <section id="contacto">
+      <div class="contacto-intro">
+        <h2 class="section-title reveal">
+          Agendá tu Consulta Gratuita de 30 Minutos
+        </h2>
+        <p class="contacto-descripcion">
+          Completá el formulario y te contacto en menos de 24 horas. Sin
+          compromiso, sin letra chica. Solo una conversación honesta sobre tu
+          proyecto.
+        </p>
+      </div>
+
+      <div class="contacto-contenedor">
+        <div class="contacto-beneficios">
+          <h3>En esta consulta vamos a:</h3>
+          <ul>
+            <li>
+              <span class="beneficio-icono">✓</span>
+              <strong>Entender tu desafío:</strong> Qué problema necesitás
+              resolver o qué proceso querés automatizar
+            </li>
+            <li>
+              <span class="beneficio-icono">✓</span>
+              <strong>Evaluar viabilidad:</strong> Si la solución técnica es
+              factible y cuál es el mejor approach
+            </li>
+            <li>
+              <span class="beneficio-icono">✓</span>
+              <strong>Estimar alcance:</strong> Tiempo aproximado, tecnologías
+              recomendadas y rango de inversión
+            </li>
+            <li>
+              <span class="beneficio-icono">✓</span>
+              <strong>Definir próximos pasos:</strong> Si tiene sentido avanzar,
+              te paso una propuesta formal en 24-48hs
+            </li>
+          </ul>
+          <div class="contacto-directo">
+            <h4>¿Preferís contacto directo?</h4>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:infokodevia@gmail.com">infokodevia@gmail.com</a>
+            </p>
+            <p>
+              <strong>WhatsApp:</strong>
+              <a
+                href="https://wa.me/5493816373404?text=Hola%20Guido,%20quiero%20agendar%20una%20consulta%20gratuita"
+                target="_blank"
+                >+54 9 381 637-3404</a
+              >
+            </p>
+            <p class="ubicacion">
+              📍 San Miguel de Tucumán, Argentina<br />
+              <small
+                >(Trabajo 100% remoto con clientes de toda Latinoamérica)</small
+              >
+            </p>
+          </div>
+        </div>
+
+        <form
+          class="formulario-contacto"
+          method="POST"
+          action="https://formsubmit.co/infokodevia@gmail.com"
+        >
+          <!-- FormSubmit Configuration -->
+          <input
+            type="hidden"
+            name="_subject"
+            value="Nueva Consulta desde Kodevia Portfolio"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" style="display: none" />
+
+          <div class="form-group">
+            <label for="nombre">Nombre completo *</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Juan Pérez"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="juan@empresa.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">WhatsApp / Teléfono</label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              placeholder="+54 9 381 123-4567"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="tipo-proyecto">Tipo de proyecto *</label>
+            <select id="tipo-proyecto" name="tipo-proyecto" required>
+              <option value="">Seleccioná una opción</option>
+              <option value="api-rest">API REST</option>
+              <option value="sistema-empresarial">
+                Sistema Empresarial Completo
+              </option>
+              <option value="migracion-legacy">
+                Migración de Sistema Legacy
+              </option>
+              <option value="integracion">Integración con APIs Externas</option>
+              <option value="otro">Otro (describir en mensaje)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="presupuesto">Presupuesto aproximado</label>
+            <select id="presupuesto" name="presupuesto">
+              <option value="">Seleccioná un rango (opcional)</option>
+              <option value="menos-1000">Menos de USD 1,000</option>
+              <option value="1000-2500">USD 1,000 - 2,500</option>
+              <option value="2500-5000">USD 2,500 - 5,000</option>
+              <option value="mas-5000">Más de USD 5,000</option>
+              <option value="por-definir">Por definir</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="urgencia">¿Cuándo necesitás tenerlo listo?</label>
+            <select id="urgencia" name="urgencia">
+              <option value="">Seleccioná un plazo (opcional)</option>
+              <option value="urgente">Lo antes posible (1-2 semanas)</option>
+              <option value="corto">Corto plazo (1 mes)</option>
+              <option value="medio">Mediano plazo (2-3 meses)</option>
+              <option value="flexible">Flexible / A convenir</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Contáme sobre tu proyecto o desafío *</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              placeholder="Ej: Necesito un sistema para gestionar inventario y facturación de mi ferretería. Actualmente llevo todo en Excel y pierdo mucho tiempo..."
+              required
+            ></textarea>
+            <small class="form-help"
+              >Cuanto más detalles compartas, mejor voy a poder ayudarte en la
+              consulta inicial.</small
+            >
+          </div>
+
+          <div class="form-privacidad">
+            <label>
+              <input
+                type="checkbox"
+                id="privacidad"
+                name="privacidad"
+                required
+              />
+              Acepto que Kodevia utilice mis datos para responder esta consulta.
+              No spam, no compartimos tu información.
+            </label>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
+              />
+            </svg>
+            Solicitar Consulta Gratuita
+          </button>
+
+          <p class="form-garantia">
+            🔒 Respuesta garantizada en menos de 24 horas hábiles. Generalmente
+            respondo el mismo día.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+      <p>&copy; 2025 Kodevia. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- ==================== BOTÓN FLOTANTE WHATSAPP ==================== -->
+    <a
+      href="https://wa.me/5493816373404?text=Hola%20Guido,%20estoy%20interesado%20en%20tus%20servicios%20de%20desarrollo%20de%20software."
+      target="_blank"
+      class="whatsapp-float"
+      aria-label="Contactar por WhatsApp"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        fill="currentColor"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+        />
+      </svg>
+      <span class="whatsapp-text">¿Hablamos?</span>
+    </a>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script src="app.js"></script>
+  </body>
+</html>
