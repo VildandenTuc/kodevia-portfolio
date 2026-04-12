@@ -1,0 +1,17 @@
+# Claude Code — configuración local (no compartir)
+.claude/settings.local.json
+
+# VSCode workspace file
+*.code-workspace
+
+# Dependencias (cuando se migre a Vite + React)
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build output (futuro)
+dist/
+build/
