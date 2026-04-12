@@ -65,5 +65,7 @@ Cada `push` a `main` dispara un deploy automático al VPS vía GitHub Actions. V
 
 ¿Tenés un proceso manual que querés automatizar?
 
+**Nombre:** Guido Alfredo Albarracín
+**Profesión:** Desarrollador de Software Full Stack
 **Email:** infokodevia@gmail.com
 **Sitio:** [kodevia.com](https://kodevia.com)
