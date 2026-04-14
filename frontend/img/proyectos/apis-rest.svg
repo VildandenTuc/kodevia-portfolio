@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <defs>
+    <linearGradient id="bg-api" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#0d2447"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#bg-api)"/>
+
+  <!-- Grid -->
+  <g stroke="#0047AB" stroke-width="0.4" opacity="0.12">
+    <line x1="0" y1="75" x2="1200" y2="75"/>
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="225" x2="1200" y2="225"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="375" x2="1200" y2="375"/>
+    <line x1="0" y1="450" x2="1200" y2="450"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="150" y1="0" x2="150" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="600"/>
+    <line x1="450" y1="0" x2="450" y2="600"/>
+    <line x1="600" y1="0" x2="600" y2="600"/>
+    <line x1="750" y1="0" x2="750" y2="600"/>
+    <line x1="900" y1="0" x2="900" y2="600"/>
+    <line x1="1050" y1="0" x2="1050" y2="600"/>
+  </g>
+
+  <!-- Left: Swagger-style API docs panel -->
+  <rect x="40" y="50" width="480" height="500" rx="8" fill="#0d1e3d" stroke="#0047AB" stroke-width="1.5"/>
+  <rect x="40" y="50" width="480" height="40" rx="8" fill="#0d2447"/>
+  <rect x="40" y="70" width="480" height="20" fill="#0d2447"/>
+  <text x="280" y="76" text-anchor="middle" fill="#4a8fd4" font-family="monospace" font-size="13">Swagger UI — API Docs</text>
+  <text x="60" y="105" fill="#2ecc71" font-family="monospace" font-size="12" font-weight="bold">kodevia-api</text>
+  <text x="200" y="105" fill="#7a9cbf" font-family="monospace" font-size="12">v1.0.0 — OAS 3.0</text>
+
+  <!-- Endpoint rows -->
+  <!-- GET /libros -->
+  <rect x="56" y="120" width="448" height="36" rx="4" fill="#0a3d1a" stroke="#2ecc71" stroke-width="1"/>
+  <rect x="60" y="128" width="40" height="20" rx="3" fill="#2ecc71"/>
+  <text x="80" y="142" text-anchor="middle" fill="#0a1628" font-family="monospace" font-size="11" font-weight="bold">GET</text>
+  <text x="112" y="142" fill="white" font-family="monospace" font-size="12">/api/v1/libros</text>
+  <text x="480" y="142" text-anchor="end" fill="#7a9cbf" font-family="monospace" font-size="11">Listar libros</text>
+
+  <!-- POST /libros -->
+  <rect x="56" y="164" width="448" height="36" rx="4" fill="#1a2a0a" stroke="#f39c12" stroke-width="1"/>
+  <rect x="60" y="172" width="44" height="20" rx="3" fill="#f39c12"/>
+  <text x="82" y="186" text-anchor="middle" fill="#0a1628" font-family="monospace" font-size="11" font-weight="bold">POST</text>
+  <text x="116" y="186" fill="white" font-family="monospace" font-size="12">/api/v1/libros</text>
+  <text x="480" y="186" text-anchor="end" fill="#7a9cbf" font-family="monospace" font-size="11">Crear libro</text>
+
+  <!-- GET /libros/{id} -->
+  <rect x="56" y="208" width="448" height="36" rx="4" fill="#0a3d1a" stroke="#2ecc71" stroke-width="1"/>
+  <rect x="60" y="216" width="40" height="20" rx="3" fill="#2ecc71"/>
+  <text x="80" y="230" text-anchor="middle" fill="#0a1628" font-family="monospace" font-size="11" font-weight="bold">GET</text>
+  <text x="112" y="230" fill="white" font-family="monospace" font-size="12">/api/v1/libros/{id}</text>
+  <text x="480" y="230" text-anchor="end" fill="#7a9cbf" font-family="monospace" font-size="11">Obtener libro</text>
+
+  <!-- PUT /libros/{id} -->
+  <rect x="56" y="252" width="448" height="36" rx="4" fill="#0a1a3d" stroke="#3498db" stroke-width="1"/>
+  <rect x="60" y="260" width="36" height="20" rx="3" fill="#3498db"/>
+  <text x="78" y="274" text-anchor="middle" fill="white" font-family="monospace" font-size="11" font-weight="bold">PUT</text>
+  <text x="108" y="274" fill="white" font-family="monospace" font-size="12">/api/v1/libros/{id}</text>
+  <text x="480" y="274" text-anchor="end" fill="#7a9cbf" font-family="monospace" font-size="11">Actualizar libro</text>
+
+  <!-- DELETE /libros/{id} -->
+  <rect x="56" y="296" width="448" height="36" rx="4" fill="#3d0a0a" stroke="#e74c3c" stroke-width="1"/>
+  <rect x="60" y="304" width="56" height="20" rx="3" fill="#e74c3c"/>
+  <text x="88" y="318" text-anchor="middle" fill="white" font-family="monospace" font-size="11" font-weight="bold">DELETE</text>
+  <text x="128" y="318" fill="white" font-family="monospace" font-size="12">/api/v1/libros/{id}</text>
+  <text x="480" y="318" text-anchor="end" fill="#7a9cbf" font-family="monospace" font-size="11">Eliminar libro</text>
+
+  <!-- POST /auth/login -->
+  <rect x="56" y="348" width="448" height="36" rx="4" fill="#1a2a0a" stroke="#f39c12" stroke-width="1"/>
+  <rect x="60" y="356" width="44" height="20" rx="3" fill="#f39c12"/>
+  <text x="82" y="370" text-anchor="middle" fill="#0a1628" font-family="monospace" font-size="11" font-weight="bold">POST</text>
+  <text x="116" y="370" fill="white" font-family="monospace" font-size="12">/api/v1/auth/login</text>
+  <text x="480" y="370" text-anchor="end" fill="#7a9cbf" font-family="monospace" font-size="11">JWT Login</text>
+
+  <!-- JWT badge -->
+  <rect x="56" y="400" width="448" height="60" rx="4" fill="#0a1628" stroke="#0047AB" stroke-width="1"/>
+  <text x="72" y="422" fill="#7a9cbf" font-family="monospace" font-size="11">Authorization:</text>
+  <text x="72" y="442" fill="#4fc1ff" font-family="monospace" font-size="10">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...</text>
+
+  <!-- Authorize lock -->
+  <rect x="380" y="406" width="108" height="28" rx="14" fill="#0047AB" opacity="0.9"/>
+  <text x="434" y="424" text-anchor="middle" fill="white" font-family="monospace" font-size="11" font-weight="bold">Authorize</text>
+
+  <!-- Right: Architecture diagram -->
+  <rect x="560" y="50" width="600" height="500" rx="8" fill="#0d1e3d" stroke="#0047AB" stroke-width="1.5"/>
+  <rect x="560" y="50" width="600" height="40" rx="8" fill="#0d2447"/>
+  <rect x="560" y="70" width="600" height="20" fill="#0d2447"/>
+  <text x="860" y="76" text-anchor="middle" fill="#4a8fd4" font-family="monospace" font-size="13">Arquitectura REST</text>
+
+  <!-- Client box -->
+  <rect x="600" y="110" width="120" height="50" rx="6" fill="#0a1628" stroke="#3498db" stroke-width="1.5"/>
+  <text x="660" y="138" text-anchor="middle" fill="#3498db" font-family="monospace" font-size="12" font-weight="bold">Client</text>
+  <text x="660" y="153" text-anchor="middle" fill="#7a9cbf" font-family="monospace" font-size="10">React / Mobile</text>
+
+  <!-- Arrow right -->
+  <line x1="720" y1="135" x2="800" y2="135" stroke="#0047AB" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="760" y="128" text-anchor="middle" fill="#f39c12" font-family="monospace" font-size="10">HTTP/JSON</text>
+
+  <!-- Controller box -->
+  <rect x="800" y="110" width="140" height="50" rx="6" fill="#0a1628" stroke="#0047AB" stroke-width="1.5"/>
+  <text x="870" y="138" text-anchor="middle" fill="#0047AB" font-family="monospace" font-size="12" font-weight="bold">@RestController</text>
+  <text x="870" y="153" text-anchor="middle" fill="#7a9cbf" font-family="monospace" font-size="10">Spring MVC</text>
+
+  <!-- Arrow down -->
+  <line x1="870" y1="160" x2="870" y2="220" stroke="#0047AB" stroke-width="1.5"/>
+  <polygon points="865,220 875,220 870,230" fill="#0047AB"/>
+
+  <!-- Auth filter -->
+  <rect x="980" y="110" width="140" height="50" rx="6" fill="#0a1628" stroke="#9b59b6" stroke-width="1.5"/>
+  <text x="1050" y="133" text-anchor="middle" fill="#9b59b6" font-family="monospace" font-size="11" font-weight="bold">JWT Filter</text>
+  <text x="1050" y="150" text-anchor="middle" fill="#7a9cbf" font-family="monospace" font-size="10">OncePerRequest</text>
+  <line x1="940" y1="135" x2="980" y2="135" stroke="#9b59b6" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Service box -->
+  <rect x="800" y="230" width="140" height="50" rx="6" fill="#0a1628" stroke="#2ecc71" stroke-width="1.5"/>
+  <text x="870" y="253" text-anchor="middle" fill="#2ecc71" font-family="monospace" font-size="12" font-weight="bold">@Service</text>
+  <text x="870" y="270" text-anchor="middle" fill="#7a9cbf" font-family="monospace" font-size="10">Business Logic</text>
+
+  <!-- Arrow down -->
+  <line x1="870" y1="280" x2="870" y2="340" stroke="#0047AB" stroke-width="1.5"/>
+  <polygon points="865,340 875,340 870,350" fill="#0047AB"/>
+
+  <!-- Repository box -->
+  <rect x="800" y="350" width="140" height="50" rx="6" fill="#0a1628" stroke="#f39c12" stroke-width="1.5"/>
+  <text x="870" y="373" text-anchor="middle" fill="#f39c12" font-family="monospace" font-size="12" font-weight="bold">@Repository</text>
+  <text x="870" y="390" text-anchor="middle" fill="#7a9cbf" font-family="monospace" font-size="10">JPA / Hibernate</text>
+
+  <!-- Arrow down -->
+  <line x1="870" y1="400" x2="870" y2="450" stroke="#0047AB" stroke-width="1.5"/>
+  <polygon points="865,450 875,450 870,460" fill="#0047AB"/>
+
+  <!-- DB box -->
+  <rect x="800" y="460" width="140" height="50" rx="6" fill="#0a1628" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="870" y="483" text-anchor="middle" fill="#e74c3c" font-family="monospace" font-size="12" font-weight="bold">MySQL</text>
+  <text x="870" y="500" text-anchor="middle" fill="#7a9cbf" font-family="monospace" font-size="10">Database</text>
+
+  <!-- Side labels -->
+  <text x="590" y="260" fill="#4fc1ff" font-family="monospace" font-size="11">Validation</text>
+  <text x="590" y="278" fill="#7a9cbf" font-family="monospace" font-size="10">@Valid · DTO</text>
+
+  <text x="590" y="380" fill="#4fc1ff" font-family="monospace" font-size="11">Exception</text>
+  <text x="590" y="398" fill="#7a9cbf" font-family="monospace" font-size="10">@ControllerAdvice</text>
+
+  <!-- Tech badges bottom -->
+  <rect x="570" y="510" width="88" height="22" rx="11" fill="#0047AB" opacity="0.8"/>
+  <text x="614" y="525" text-anchor="middle" fill="white" font-family="monospace" font-size="10" font-weight="bold">Spring Boot</text>
+
+  <rect x="668" y="510" width="52" height="22" rx="11" fill="#9b59b6" opacity="0.8"/>
+  <text x="694" y="525" text-anchor="middle" fill="white" font-family="monospace" font-size="10" font-weight="bold">JWT</text>
+
+  <rect x="730" y="510" width="68" height="22" rx="11" fill="#2ecc71" opacity="0.8"/>
+  <text x="764" y="525" text-anchor="middle" fill="white" font-family="monospace" font-size="10" font-weight="bold">Swagger</text>
+
+  <rect x="808" y="510" width="52" height="22" rx="11" fill="#f39c12" opacity="0.8"/>
+  <text x="834" y="525" text-anchor="middle" fill="white" font-family="monospace" font-size="10" font-weight="bold">Maven</text>
+
+  <rect x="870" y="510" width="44" height="22" rx="11" fill="#e74c3c" opacity="0.8"/>
+  <text x="892" y="525" text-anchor="middle" fill="white" font-family="monospace" font-size="10" font-weight="bold">JPA</text>
+
+  <rect x="924" y="510" width="56" height="22" rx="11" fill="#1abc9c" opacity="0.8"/>
+  <text x="952" y="525" text-anchor="middle" fill="white" font-family="monospace" font-size="10" font-weight="bold">Lombok</text>
+
+  <!-- Title overlay -->
+  <rect x="0" y="548" width="1200" height="52" fill="#0a1628" opacity="0.85"/>
+  <text x="60" y="580" fill="white" font-family="sans-serif" font-size="18" font-weight="bold">APIs REST con Spring Boot</text>
+  <text x="1140" y="580" text-anchor="end" fill="#0047AB" font-family="sans-serif" font-size="14">Spring Boot · JWT · Swagger · MySQL</text>
+</svg>

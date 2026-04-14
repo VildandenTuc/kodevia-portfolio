@@ -1,6 +1,6 @@
 # Backlog Kodevia Portfolio
 
-Última actualización: 2026-04-12
+Última actualización: 2026-04-14
 
 ---
 
@@ -119,3 +119,8 @@
 
 - [x] **[DONE-001]** Blog thumbnails: 5 SVGs locales en `img/blog/` (reemplazó placehold.co) — *2026-04-12*
 - [x] **[DONE-002]** Testimonio actualizado: María Belén Torres → Angel Alum, Representante Legal - Instituto Privado Tucumán — *2026-04-12*
+- [x] **[BACK-001]** Imágenes proyectos: 3 SVGs locales en `img/proyectos/` (reemplazó Unsplash) — *2026-04-14*
+- [x] **[BACK-004/007]** Footer año dinámico: `new Date().getFullYear()` — *2026-04-14*
+- [x] **[BACK-003]** Links GitHub verificados: usuario VildandenTuc correcto — *2026-04-14*
+- [x] **[BACK-005]** Lighthouse: Performance 99 / Accessibility 100 / Best Practices 100 / SEO 100 — *2026-04-12*
+- [x] **[BACK-010]** Formulario de contacto verificado: FormSubmit.co → infokodevia@gmail.com funcional — *2026-04-14*

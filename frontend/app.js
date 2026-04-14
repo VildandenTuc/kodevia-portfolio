@@ -1,3 +1,6 @@
+// ==================== FOOTER AÑO DINÁMICO ====================
+document.getElementById('footer-year').textContent = new Date().getFullYear();
+
 // ==================== MENÚ HAMBURGUESA ====================
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
