@@ -9,7 +9,7 @@ Cierra la sesión de desarrollo de Kodevia Portfolio registrando todo el trabajo
 3. Actualiza `CLAUDE.md` si hubo cambios estructurales en el proyecto
 4. Guarda memoria en el sistema de archivos local (`memory/`)
 5. Guarda memoria en engram con `mem_save`
-6. Opcionalmente actualiza el backlog en `frontend/BACKLOG.md`
+6. Actualiza `frontend/BACKLOG.md`: marca completados y agrega nuevas tareas
 7. Hace commit y push a GitHub con todos los cambios de la sesión
 
 ## Instrucciones de ejecución
@@ -57,8 +57,13 @@ Llamá a `mem_save` con:
 - `title`: título corto y searchable
 - `content`: formato **What** / **Why** / **Where** / **Learned**
 
-### Paso 5 — Actualizar BACKLOG.md
-Si surgieron nuevas tareas pendientes, agregarlas al backlog bajo la sección correspondiente.
+### Paso 5 — Actualizar BACKLOG.md (SIEMPRE, no opcional)
+Revisá el backlog y hacé las dos cosas:
+
+1. **Marcar completados:** Cualquier ítem que se haya resuelto en esta sesión o en sesiones anteriores pero no registrado — moverlo a la sección `## Completado` con fecha `YYYY-MM-DD` y descripción breve.
+2. **Agregar nuevos pendientes:** Si surgieron tareas nuevas durante la sesión, agregarlas bajo la prioridad correspondiente (Alta / Media / Baja).
+
+No dejar el backlog desactualizado. Si algo está hecho en el código, tiene que estar marcado como hecho en el backlog.
 
 ### Paso 6 — Commit y push a GitHub
 Ejecutá directamente estos comandos con la herramienta Bash:

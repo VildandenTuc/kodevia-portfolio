@@ -18,11 +18,8 @@
 
 ---
 
-### [BACK-002] Revisar y completar testimonios
-**Tipo:** Contenido
-**Contexto:** Solo el testimonio de Angel Alum (Instituto Privado Tucumán) está verificado como real. Los otros dos — "Carlos Ramírez (CTO - StartUp Logística)" y "Ana Laura Gómez (Gerente IT - Distribuidora Norte)" — necesitan confirmación de si son reales o ficticios.
-**También:** En los modales de casos de estudio hay testimonios de "Prof. María González" y "Lic. Roberto Fernández" que también deben revisarse.
-**Acción requerida:** Confirmar con el usuario cuáles son reales y cuáles reemplazar.
+### ~~[BACK-002] Revisar y completar testimonios~~ ✅ COMPLETADO 2026-04-16
+Testimonios actualizados: Humberto Ávila y Angel Alum (reemplazó ficticios).
 
 ---
 
@@ -124,3 +121,4 @@
 - [x] **[BACK-003]** Links GitHub verificados: usuario VildandenTuc correcto — *2026-04-14*
 - [x] **[BACK-005]** Lighthouse: Performance 99 / Accessibility 100 / Best Practices 100 / SEO 100 — *2026-04-12*
 - [x] **[BACK-010]** Formulario de contacto verificado: FormSubmit.co → infokodevia@gmail.com funcional — *2026-04-14*
+- [x] **[BACK-002]** Testimonios ficticios reemplazados: Humberto Ávila y Angel Alum (textos reales) — *2026-04-16*
