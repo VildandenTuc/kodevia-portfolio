@@ -1,5 +1,6 @@
 # Claude Code — configuración local (no compartir)
 .claude/settings.local.json
+.playwright-mcp/
 
 # VSCode workspace file
 *.code-workspace
