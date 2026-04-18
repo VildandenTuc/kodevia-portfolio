@@ -1,6 +1,6 @@
 # Backlog Kodevia Portfolio
 
-Última actualización: 2026-04-18
+Última actualización: 2026-04-18 (sesión 20)
 
 ---
 
@@ -49,3 +49,4 @@ Landing page estática con Lighthouse 99/100/100/100. No hay justificación téc
 - [x] **[BACK-010]** Formulario de contacto verificado: FormSubmit.co → infokodevia@gmail.com funcional — *2026-04-14*
 - [x] **[BACK-005]** Accesibilidad: Lighthouse 100 + revisión visual confirmada — *2026-04-18*
 - [x] **[BACK-006]** Imágenes hero revisadas visualmente: correctas y apropiadas — *2026-04-18*
+- [x] **[BACK-011]** Deploy kodevia.cloud LIVE en producción con HTTPS y CI/CD operativo — *2026-04-18*
